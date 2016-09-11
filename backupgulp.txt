@@ -78,8 +78,6 @@ gulp.task('copy', function(){
         .pipe(gulp.dest('dist/js'));
     gulp.src('app/images/*')
         .pipe(gulp.dest('dist/images'));
-    gulp.src('app/images/people/*')
-        .pipe(gulp.dest('dist/images/people'));
 });
 
 gulp.task('browserify', function(){
