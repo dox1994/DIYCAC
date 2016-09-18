@@ -164,8 +164,8 @@ body {
 body {
 	font-family: 'Raleway', sans-serif;
 	overflow-x: hidden;
-	background: #1e1e1f;
-	color: #e0e0e0;
+	background: #eee;
+	color: #1e1e1f;
 	font-size: 15px;
 	font-weight: 500;
 	-webkit-font-smoothing: antialiased;
