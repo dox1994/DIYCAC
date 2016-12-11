@@ -24,3 +24,37 @@ Besides, Google fonts and other template CSS are embedded in the project so we d
 run 'gulp' to build project
 
 and then 'node server.js' start webservice.
+
+### More On how to run it on a Mac
+1. Download [Webstorm](https://www.jetbrains.com/webstorm/download/)
+ you will have 30 days trial or free if you register as student email.
+2. create a github account and fork this project.
+3. git clone your repo. [use my own repo as example]
+```
+> git clone git@github.com:DataMonster/DIYCAC.git
+```
+4. move to integration and then create a new branch based on integration, with name: "feature/new-feature"
+```
+> git checkout integration
+> git checkout -b feature/new-feature
+```
+5. you are in the new branch now, do whatever you want
+
+6. Install NodeJS and NPM on your MAC, use homebrew
+> brew install node
+
+#### Now, try to run locally.
+
+7. in your branch, install dependency of the project
+```
+> npm install
+```
+8. build project use gulp
+```
+> gulp
+```
+9. run server
+```
+> node server.js
+```
+10. now, access website through: [http://localhost:3001](http://localhost:3001)
