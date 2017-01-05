@@ -162,7 +162,7 @@ $(document).ready(function () {
         $(this).toggleClass('opn');
     });
     $('.navbar .nav li a').on('click', function() {
-        $('.navbar .navbar-collapse.in').collapse('hide');
+        $('.navbar.navbar-collapse.in').collapse('hide');
         $('.btn.responsive-menu').removeClass('opn');
     });
     /*-----------------------------------------------------------------------------------*/

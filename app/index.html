@@ -23,13 +23,29 @@
     <!--<script src="style/js/html5shiv.js"></script>-->
     <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>-->
     <![endif]-->
-    <style type="text/css">.fancybox-margin{margin-right:0px;}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+    <style type="text/css">.fancybox-margin{margin-right:0px;}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
+    <style type="text/css">
+        section{
+            margin-bottom:50px;
+        }
+        .tile-content-text h6{
+            font-weight:normal;
+            font-size:11px;
+        }
+        .tile-content-text h3{
+            font-size:18px;
+        }
+        .standout-section > h1,h2,h3,h4,h5,h6,i{
+            text-shadow: 0.5px 0.5px 0.5px #898989;
+        }
+    </style>
+</head>
 <body class="full-layout" style="overflow: visible;">
 <div id="preloader" style="display: none;"><div id="status" style="display: none;"><div class="spinner"></div></div></div>
 <div class="body-wrapper">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header"> <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
-            <div class="navbar-brand text-center"> <a href="index.html"><img src="images/logo@2x.png" alt="" data-src="images/logo.png" data-ret="images/logo@2x.png" class="retina" height="32" width="32" style="display: inline;"></a> </div>
+            <div class="navbar-brand text-center"> <a href="index.html"><img src="images/caclogo.png" alt="" data-src="images/caclogo.png" data-ret="images/caclogo.png" height="38" width="78" style="display: inline;"></a> </div>
             <!-- /.navbar-brand -->
         </div>
         <!-- /.navbar-header -->
@@ -38,39 +54,39 @@
                 <li class="current">
                     <a href="#" class="hint--right" data-hint="中美加留学">
                         <i class="budicon-home-1"></i>
-                        <span>中美加留学</span>
+                        <span> 中美加留学 </span>
                     </a>
                 </li>
                 <li>
                     <a href="#portfolio" class="hint--right" data-hint="成功案例">
                         <i class="budicon-image"></i>
-                        <span>成功案例</span>
+                        <span> 成功案例 </span>
                     </a>
                 </li>
                 <li>
                     <a href="#about" class="hint--right" data-hint="团队介绍">
                         <i class="budicon-author"></i>
-                        <span>团队介绍</span>
+                        <span> 团队介绍 </span>
                     </a>
                 </li>
                 <li>
                     <a href="blog.html" class="hint--right" data-hint="服务介绍">
                         <i class="budicon-book-1"></i>
-                        <span>服务介绍</span>
+                        <span> 服务介绍 </span>
                     </a>
                 </li>
                 <li>
                     <a href="#contact" class="hint--right" data-hint="留学咨询">
                         <i class="budicon-profile"></i>
-                        <span>留学咨询</span>
+                        <span> 留学咨询 </span>
                     </a>
                 </li>
                 <!--<li><a href="elements.html" class="hint&#45;&#45;right" data-hint="Elements"><i class="budicon-setting"></i><span>Elements</span></a></li>-->
                 <li>
                     <a href="#elsewhere" class="hint--right fancybox-inline"
-                       data-hint="关注我们" data-fancybox-width="325" data-fancybox-height="220">
+                       data-hint="关注我们" data-fancybox-width="325" data-fancybox-height="360">
                         <i class="icon-heart-empty-1"></i>
-                        <span>关注我们</span>
+                        <span> 关注我们 </span>
                     </a>
                 </li>
             </ul>
@@ -78,16 +94,11 @@
         </div>
         <!-- /.navbar-collapse -->
         <div id="elsewhere" style="display:none;">
-            <h1>Me, Elsewhere</h1>
+            <h4>微信扫一扫，获取你的专属指导</h4>
             <div class="divide20"></div>
-            <ul class="social">
-                <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-                <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-s-instagram"></i></a></li>
-                <li><a href="#"><i class="icon-s-flickr"></i></a></li>
-                <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-                <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
-            </ul>
+            <div>
+                <img style="width: 260px;height:260px;" src="images/qrcode.png"/>
+            </div>
         </div>
         <!-- /#elsewhere -->
     </nav>
@@ -95,203 +106,153 @@
 
     <div class="standout-section">
         <div class="container text-inverse">
-            <div class="col-md-4"></div>
-            <div class="col-md-8">
-                <div class="col-md-3 section section-slim section-front-end-web opaque hover-translucify" style="padding:0; margin:0;">
+            <div class="col-md-8 col-sm-12 col-xs-12 col-md-push-4">
+                <div class="hidden-xs col-md-6 col-sm-6 col-xs-12 section section-slim section-transparent opaque hover-translucify" style="padding:0; margin:0;">
                     <a href="#" class="homepage-tile">
                         <div class="tile-split-title">
                             <div class="tile-inner">
-                                <br />
-                                <h3 class="tile-title">中美加国际</h3>
-                                <!--<img class="tile-content-split-image" src="images/home/idea.svg" alt="desktop monitor and phone" title="desktop monitor and phone">-->
-                            </div>
-                        </div>
-                        <div class="tile-split-image">
-                            <div class="tile-inner">
-                                <h4 class="tile-title">留学服务</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 section section-slim section-android opaque hover-translucify services-1" style="padding:0; margin:0;">
-                    <a href="#" class="homepage-tile">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title">精英计划</h3>
+                                <img src="images/caclogo-full.png" alt="中美加国际" title="中美加国际" style="height:80%;float:left;">
                             </div>
                         </div>
 
-                        <div class="tile-split-image">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-slim section-green opaque hover-translucify" style="padding:0; margin:0;">
+                    <a href="#" class="homepage-tile">
+                        <div class="tile-split-image hidden-xs">
                             <div class="tile-inner">
-                                <img class="tile-content-split-image" src="images/svg/photos/resume_value.svg" alt="android mascot and phone" title="resume value">
-                                <!--<p class="text-status-label">New</p>-->
+                                <i class="icon-link tile-icon"></i>
+                            </div>
+                        </div>
+                        <div class="tile-split-title">
+                            <div class="tile-inner tile-content-text">
+                                <h3 class="tile-title">留学保研双保险服务</h3>
+                                <h6>Double insurance Program</h6>
+                                <i class="icon-link fa-3x tile-icon visible-xs"></i>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 section section-slim section-resume-analyst opaque hover-translucify" style="padding:0; margin:0;">
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-slim section-yellow opaque hover-translucify" style="padding:0; margin:0;">
                     <a href="#" class="homepage-tile">
+                        <div class="tile-split-image hidden-xs">
+                            <div class="tile-inner">
+                                <i class="icon-thumbs-up-1 tile-icon"></i>
+                            </div>
+                        </div>
                         <div class="tile-split-title">
                             <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title">DIY申请</h3>
+                                <h3 class="tile-title">成功案例</h3>
+                                <h6>Offer</h6>
+                                <i class="icon-thumbs-up-1 fa-3x visible-xs tile-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-slim section-orange opaque hover-translucify" style="padding:0; margin:0;">
+                    <a href="#" class="homepage-tile opaque hover-translucify">
+                        <div class="tile-split-image hidden-xs">
+                            <div class="tile-inner">
+                                <i class="icon-gift tile-icon"></i>
+                            </div>
+                        </div>
+                        <div class="tile-split-title">
+                            <div class="tile-inner tile-content-text">
+                                <h3 class="tile-title">VIP计划服务介绍</h3>
+                                <h6>VIP Program of CAC Education</h6>
+                                <i class="icon-gift fa-3x visible-xs tile-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-slim section-purple opaque hover-translucify" style="padding:0; margin:0;">
+                    <a href="#" class="homepage-tile opaque hover-translucify">
+                        <div class="tile-split-image hidden-xs">
+                            <div class="tile-inner">
+                                <i class="tile-icon icon-star"></i>
+                            </div>
+                        </div>
+                        <div class="tile-split-title">
+                            <div class="tile-inner tile-content-text">
+                                <h3 class="tile-title">精英计划服务介绍</h3>
+                                <h6>Elite Program of CAC Education</h6>
+                                <i class="icon-star fa-3x visible-xs tile-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-slim section-pink opaque hover-translucify" style="padding:0; margin:0;">
+                    <a href="#" class="homepage-tile">
+                        <div class="tile-split-image hidden-xs">
+                            <div class="tile-inner">
+                                <i class="icon-leaf-1 tile-icon"></i>
+                            </div>
+                        </div>
+                        <div class="tile-split-title">
+                            <div class="tile-inner tile-content-text">
+                                <h3 class="tile-title">公司介绍</h3>
+                                <h6>About Company</h6>
+                                <i class="icon-leaf-1 fa-3x visible-xs tile-icon"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-slim section-transparent hidden-xs" style="padding:0;margin:0;">
+                    <div class="homepage-tile">
+                        <div class="tile-split-title">
+                            <div class="tile-inner tile-content-text" style="text-align:left;">
+                                <!--<h5 class="tile-title" style="color:#4D4C4D;margin-top:5%;">美国名校申请成功率</h5>-->
                             </div>
                         </div>
                         <div class="tile-split-image hidden-xs">
-                            <div class="tile-inner">
-                                <img class="tile-content-split-image" src="images/svg/photos/ps_refine.svg" alt="graph and magnifying glass" title="ps refine">
+                            <div class="tile-inner" style="color:black;">
+                                <h5 class="tile-title" style="font-weight: normal;color:#4D4C4D;margin-top:0;margin-left:10%">美国名校申请成功率</h5>
+                                <br/>
+                                <h3 style="color:#173452;font-size:4rem;margin-left:20%;">100%</h3>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <!--<div class="col-md-3 section section-slim section-data-analyst visible-sm" style="padding:0; margin:0;">-->
-                <!--<div class="homepage-tile">-->
-                <!--<div class="tile-split-title">123</div>-->
-                <!--<div class="tile-split-image"></div>-->
-                <!--<div class="tile-inner">-->
-                <!--&lt;!&ndash;<img class="tile-content-full-image" alt="Google Web Optimization instructor" title="Google Web Optimization instructor" src="//lh3.ggpht.com/tEAxJGtiywQdkZIzj8Xi4GStDpXg9mj7DEwtWVfgPb-SQ637d9qY26RJG5zaexxGyVKl8x6F9bqU0VHEOQ=s285#w=570&amp;h=570">&ndash;&gt;-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <div class="col-md-3 section section-slim section-ios opaque hover-translucify" style="padding:0; margin:0;">
-                    <a href="#" class="homepage-tile">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title">单项分体式服务</h3>
-                            </div>
-                        </div>
-                        <div class="tile-split-image">
-                            <div class="tile-inner">
-                                <img class="tile-content-split-image" src="images/svg/photos/interview_refine.svg" alt="iphone and swift(bird)" title="interview_refine">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="col-md-4"></div>
-            <div class="col-md-8">
-                <div class="col-md-3 section section-slim section-data-analyst" style="padding:0; margin:0;">
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-slim section-transparent hidden-xs" style="padding:0; margin:0;">
                     <div class="homepage-tile">
                         <div class="tile-split-title">
                             <div class="tile-inner tile-content-text">
-                                中美加国际（CAC DIY）成立10年来不断的更新和突破，以“比专业更专业”的理念，综合多种留学数据。
                             </div>
                         </div>
-                        <div class="tile-split-image"></div>
+                        <div class="tile-split-image hidden-xs"></div>
                         <div class="tile-inner">
                             <!--<img class="tile-content-full-image" alt="woman studying on laptop" title="woman studying on laptop" src="//lh6.ggpht.com/dQ5SLts7XDcXZOkeaJJ3FURQDNeTpSt8bIFJWzB6dEYoOsvRNZaOaT6fBmZ1kGFthMVQuc5w4mU60r1qqTg=s285#w=577&amp;h=577">-->
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 section section-slim section-full-stack opaque hover-translucify" style="padding:0; margin:0;">
+                <div class="col-md-3 col-sm-3 col-xs-6 section section-blue opaque hover-translucify" style="padding:0; margin:0;">
                     <a href="#" class="homepage-tile opaque hover-translucify">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title">VIP服务</h3>
-                                <!--<p class="text-status-label visible-xs"></p>-->
-                            </div>
-                        </div>
-                        <div class="tile-split-image">
-                            <div class="tile-inner">
-                                <img class="tile-content-split-image" src="images/svg/photos/story_of_abroad.svg" alt="screen and database" title="screen and database">
-                                <!--<p class="text-status-label"></p>-->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 section section-slim section-intro-to-programming opaque hover-translucify" style="padding:0; margin:0;">
-                    <a href="#" class="homepage-tile">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title">留学保研双保险</h3>
-                            </div>
-                        </div>
                         <div class="tile-split-image hidden-xs">
                             <div class="tile-inner">
-                                <img class="tile-content-split-image" src="images/svg/photos/facts_of_abroad.svg" alt="facts of abroad" title="facts of abroad">
+                                <i class="icon-users tile-icon"></i>
+                            </div>
+                        </div>
+                        <div class="tile-split-title">
+                            <div class="tile-inner tile-content-text">
+                                <h3 class="tile-title">团队介绍</h3>
+                                <h6>About Team</h6>
+                                <i class="icon-users fa-3x visible-xs tile-icon"></i>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 section section-slim section-blank hidden-xs" style="padding:0; margin:0;">
+                <div class="col-md-6 col-sm-6 col-xs-12 section section-slim section-transparent hidden-xs" style="padding:0; margin:0;">
                     <div class="homepage-tile">
                         <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title" style="color:black;">美国名校申请成功率</h3>
-                            </div>
-                        </div>
-                        <div class="tile-split-image">
-                            <div class="tile-inner" style="color:black;">
-                                <br />
-                                100 %
+                            <div class="tile-inner tile-content-text"  style="text-align: left;">
+                                <br/>
+                                <h5 class="tile-title" style="color:#4D4C4D;margin-top:5%;font-weight: normal;">累计成功申请人数</h5>
+                                <br/>
+                                <h3 id="countUpNumber" style="color:#173452;font-size:6rem;margin-left:20%;"></h3>
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-4"></div>
-            <div class="col-md-8">
-                <div class="col-md-3 section section-slim section-data-analyst hidden-xs" style="padding:0; margin:0;">
-                    <div class="homepage-tile">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                为其遍布全球的申请学生取得有目共睹的成绩。
-                            </div>
-                        </div>
-                        <div class="tile-split-image"></div>
-                        <div class="tile-inner">
-                            <!--<img class="tile-content-full-image" alt="woman studying on laptop" title="woman studying on laptop" src="//lh6.ggpht.com/dQ5SLts7XDcXZOkeaJJ3FURQDNeTpSt8bIFJWzB6dEYoOsvRNZaOaT6fBmZ1kGFthMVQuc5w4mU60r1qqTg=s285#w=577&amp;h=577">-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 section-inverse section-inverse-standout opaque hover-translucify" style="padding:0; margin:0;">
-                    <a href="#" class="homepage-tile opaque hover-translucify">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title">留学后续、就业指导</h3>
-                            </div>
-                        </div>
-                        <div class="tile-split-image">
-                            <div class="tile-inner">
-                                <img class="tile-content-split-image" src="images/svg/photos/story_of_abroad.svg" alt="screen and database" title="screen and database">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 section section-slim section-blank hidden-xs" style="padding:0; margin:0;">
-                    <div class="homepage-tile">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title" style="color:black;">累计成功申请人数</h3>
-                            </div>
-                        </div>
-                        <div class="tile-split-image">
-                            <div class="tile-inner" style="color:black;">
-                                <br />
-                                4806人
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 section-inverse section-inverse-standout-alternate opaque hover-translucify" style="padding:0; margin:0;">
-                    <a href="#" class="homepage-tile">
-                        <div class="tile-split-title">
-                            <div class="tile-inner tile-content-text">
-                                <h3 class="tile-title">最新留学资讯</h3>
-                                <img class="tile-content-split-image-small visible-xs" src="../image/svg/photos/facts_of_abroad.svg" alt="facts of abroad" title="facts of abroad">
-                                <p class="text-status-label visible-xs"></p>
-                            </div>
-                        </div>
-                        <div class="tile-split-image">
-                            <div class="tile-inner">
-                                <img class="tile-content-split-image" src="images/svg/photos/facts_of_abroad.svg" alt="facts of abroad" title="facts of abroad">
-                                <p class="text-status-label"></p>
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -301,109 +262,90 @@
     <div class="container">
         <section id="portfolio" class="portfolio">
             <div class="box">
-                <h2 class="section-title pull-left">过往案例精选</h2>
+                <h2 class="section-title pull-left">成功案例精选</h2>
                 <div id="filters-container" class="cbp-l-filters-alignRight pull-right">
                     <div data-filter="*" class="cbp-filter-item-custom-active cbp-filter-item-custom btn">全部</div>
-                    <div data-filter=".architecture" class="cbp-filter-item-custom btn">商科</div>
-                    <div data-filter=".macro" class="cbp-filter-item-custom btn">理科</div>
-                    <div data-filter=".portrait" class="cbp-filter-item-custom btn">工科</div>
-                    <div data-filter=".still-life" class="cbp-filter-item-custom btn">博士申请</div>
+                    <div data-filter=".business" class="cbp-filter-item-custom btn">商科</div>
+                    <div data-filter=".science" class="cbp-filter-item-custom btn">理科</div>
+                    <div data-filter=".engineering" class="cbp-filter-item-custom btn">工科</div>
+                    <div data-filter=".doctor" class="cbp-filter-item-custom btn">博士申请</div>
                 </div>
                 <!-- /#filters-container -->
                 <div class="clearfix"></div>
                 <div id="grid-container" class="cbp-l-grid-masonry cbp cbp-chrome cbp-caption-fadeIn cbp-animation-quicksand cbp-cols-3 cbp-ready" style="height: 791px;">
                     <ul class="cbp-wrapper">
-                        <li class="cbp-item frame architecture" style="width: 350px; transform: translate3d(0px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post1.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/pa1.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Thumbnail Slider</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div></li>
-                        <li class="cbp-item frame macro" style="width: 350px; transform: translate3d(360px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post2.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/pm1.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Fullscreen Gallery</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div></li>
-                        <li class="cbp-item frame portrait" style="width: 350px; transform: translate3d(720px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post3.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/pp1.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Multiple Images</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div></li>
-                        <li class="cbp-item frame still-life" style="width: 350px; transform: translate3d(360px, 232px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post4.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/ps1.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Fullwidth Video</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div></li>
-                        <li class="cbp-item frame architecture" style="width: 350px; transform: translate3d(0px, 244px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post1.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/pa2.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Thumbnail Slider</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div></li>
-                        <li class="cbp-item frame macro" style="width: 350px; transform: translate3d(720px, 468px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post2.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/pm2.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Fullscreen Gallery</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div></li>
-                        <li class="cbp-item frame portrait" style="width: 350px; transform: translate3d(0px, 488px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post3.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/pp2.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Multiple Images</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        </div></li>
-                        <li class="cbp-item frame still-life" style="width: 350px; transform: translate3d(360px, 526px, 0px); opacity: 1;"><div class="cbp-item-wrapper"> <a class="cbp-caption cbp-singlePage" href="ajax/post4.html">
-                            <div class="cbp-caption-defaultWrap"> <img src="images/ps2.jpg" alt=""> </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Fullwidth Video</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a> </div></li>
+                        <li class="cbp-item frame engineering" style="width: 350px; transform: translate3d(0px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                            <div class="cbp-caption-defaultWrap card">
+                                <h3 class="card-name">韩梅梅</h3>
+                                <p><b>录取学校：</b>斯坦福大学</p>
+                                <p><b>申请专业：</b>计算机科学与技术</p>
+                                <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                                <p><b>本科学校：</b>南开大学</p>
+                            </div></div>
+                        </li>
+                        <li class="cbp-item frame engineering" style="width: 350px; transform: translate3d(360px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                            <div class="cbp-caption-defaultWrap card">
+                                <h3 class="card-name">韩梅梅</h3>
+                                <p><b>录取学校：</b>斯坦福大学</p>
+                                <p><b>申请专业：</b>计算机科学与技术</p>
+                                <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                                <p><b>本科学校：</b>南开大学</p>
+                            </div></div>
+                        </li>
+                        <li class="cbp-item frame science" style="width: 350px; transform: translate3d(720px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                            <div class="cbp-caption-defaultWrap card">
+                                <h3 class="card-name">韩梅梅</h3>
+                                <p><b>录取学校：</b>斯坦福大学</p>
+                                <p><b>申请专业：</b>数学</p>
+                                <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                                <p><b>本科学校：</b>南开大学</p>
+                            </div></div>
+                        </li>
+                        <li class="cbp-item frame science" style="width: 350px; transform: translate3d(360px, 230px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                            <div class="cbp-caption-defaultWrap card">
+                                <h3 class="card-name">韩梅梅</h3>
+                                <p><b>录取学校：</b>斯坦福大学</p>
+                                <p><b>申请专业：</b>数学</p>
+                                <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                                <p><b>本科学校：</b>南开大学</p>
+                            </div></div>
+                        </li>
+                        <li class="cbp-item frame business" style="width: 350px; transform: translate3d(0px, 230px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                            <div class="cbp-caption-defaultWrap card">
+                                <h3 class="card-name">韩梅梅</h3>
+                                <p><b>录取学校：</b>斯坦福大学</p>
+                                <p><b>申请专业：</b>商科</p>
+                                <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                                <p><b>本科学校：</b>南开大学</p>
+                            </div></div>
+                        </li> <li class="cbp-item frame business" style="width: 350px; transform: translate3d(720px, 460px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                        <div class="cbp-caption-defaultWrap card">
+                            <h3 class="card-name">韩梅梅</h3>
+                            <p><b>录取学校：</b>斯坦福大学</p>
+                            <p><b>申请专业：</b>商科</p>
+                            <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                            <p><b>本科学校：</b>南开大学</p>
+                        </div></div>
+                    </li> <li class="cbp-item frame doctor" style="width: 350px; transform: translate3d(0px, 460px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                        <div class="cbp-caption-defaultWrap card">
+                            <h3 class="card-name">韩梅梅</h3>
+                            <p><b>录取学校：</b>斯坦福大学</p>
+                            <p><b>申请专业：</b>博士</p>
+                            <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                            <p><b>本科学校：</b>南开大学</p>
+                        </div></div>
+                    </li> <li class="cbp-item frame doctor" style="width: 350px; transform: translate3d(360px, 460px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+                        <div class="cbp-caption-defaultWrap card">
+                            <h3 class="card-name">韩梅梅</h3>
+                            <p><b>录取学校：</b>斯坦福大学</p>
+                            <p><b>申请专业：</b>博士</p>
+                            <p><b>申请背景：</b>GPA TOEFL/IELTS  GRE/Gmat</p>
+                            <p><b>本科学校：</b>南开大学</p>
+                        </div></div>
+                    </li>
                     </ul>
                 </div>
                 <!-- /.cbp-l-grid-masonry -->
-                <div class="cbp-l-loadMore-button"> <a href="ajax/port1-more.html" class="cbp-l-loadMore-button-link btn">阅读更多</a> </div>
             </div>
             <!-- /.box -->
         </section>
@@ -411,10 +353,26 @@
 
         <section id="about">
             <div class="box">
-                <h2 class="section-title">中美加团队介绍</h2>
+                <h2 class="section-title">中美加精英团队</h2>
                 <div class="row">
                     <div class="col-md-5 col-md-push-7 col-sm-12">
-                        <figure class="frame"><img src="images/about.jpg" alt=""></figure>
+                        <figure class="frame"><a href="">
+                            <div id="carousel-wrapper" class="carousel slide" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="images/about.jpg" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/about2.jpg" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/about3.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </figure>
                     </div>
                     <!-- /column -->
                     <div class="col-md-7 col-md-pull-5 col-sm-12" style="color: #fff;">
@@ -432,7 +390,7 @@
                 <!-- /.row -->
                 <div class="clearfix"></div>
                 <div class="divide40"></div>
-                <h2 class="section-title">中美加留学服务</h2>
+                <h2 class="section-title">中美加“三大优势”</h2>
                 <div class="divide10"></div>
                 <div class="services-1">
                     <div class="row" style="color: #fff;">
@@ -440,63 +398,31 @@
                             <div class="icon"> <i class="budicon-heart icn"></i> </div>
                             <!-- /.icon -->
                             <div class="text">
-                                <h5>名校DIY</h5>
-                                <p>申请咨询服务，专注于冲击名校</p>
+                                <h5>名校MENTOR护航</h5>
+                                <p>可以写一些简介可以写一些简介可以写一些简介可以写一些简介</p>
                             </div>
                             <!-- /.text -->
                         </div>
                         <!-- /column -->
                         <div class="col-md-4 col-sm-6">
-                            <div class="icon"> <i class="budicon-gender-female icn"></i> </div>
+                            <div class="icon"> <i class="budicon-webcam icn"></i> </div>
                             <!-- /.icon -->
                             <div class="text">
-                                <h5>精英计划</h5>
-                                <p>根据你的情况，定制服务，确保录取</p>
+                                <h5>WT申请流程监控系统</h5>
+                                <p>可以写一些简介可以写一些简介可以写一些简介可以写一些简介</p>
                             </div>
                             <!-- /.text -->
                         </div>
                         <!-- /column -->
                         <div class="col-md-4 col-sm-6">
-                            <div class="icon"> <i class="budicon-meal icn"></i> </div>
+                            <div class="icon"> <i class="budicon-briefcase icn"></i> </div>
                             <!-- /.icon -->
                             <div class="text">
-                                <h5>The Best</h5>
-                                <p>精品分体式服务，选择适合自己的申请计划</p>
+                                <h5>世界500强实习内推资源</h5>
+                                <p>可以写一些简介可以写一些简介可以写一些简介可以写一些简介</p>
                             </div>
                             <!-- /.text -->
                         </div>
-                        <!-- /column -->
-                        <div class="divide30"></div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="icon"> <i class="budicon-bag icn"></i> </div>
-                            <!-- /.icon -->
-                            <div class="text">
-                                <h5>VIP 客户</h5>
-                                <p>顶级留学项目，一路护航</p>
-                            </div>
-                            <!-- /.text -->
-                        </div>
-                        <!-- /column -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="icon"> <i class="budicon-diamond icn"></i> </div>
-                            <!-- /.icon -->
-                            <div class="text">
-                                <h5>高考生计划</h5>
-                                <p>申请英、美、加拿大名校</p>
-                            </div>
-                            <!-- /.text -->
-                        </div>
-                        <!-- /column -->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="icon"> <i class="budicon-cocktail icn"></i> </div>
-                            <!-- /.icon -->
-                            <div class="text">
-                                <h5>其他咨询服务</h5>
-                                <p>文书修改，留学咨询，联系教授及项目</p>
-                            </div>
-                            <!-- /.text -->
-                        </div>
-                        <!-- /column -->
                     </div>
                     <!-- /.row -->
                 </div>
@@ -586,7 +512,7 @@
         </section>
         <!-- /#contact -->
 
-        <footer class="footer box">
+        <footer class="footer box"  style="margin-top:60px;">
             <p class="pull-left" style="color: #fff;">© 2001-2016 中美加国际留学 </p>
             <ul class="social pull-right">
                 <li><a href="#"><i class="icon-s-rss"></i></a></li>
@@ -611,7 +537,27 @@
 <script src="js/classie.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/countUp.js"></script>
 <!--<script>-->
+<script type="text/javascript">
+    //加载页面后的计数动画效果
+    var options = {
+        useEasing : true,
+        useGrouping : true,
+        separator : ',',
+        decimal : '.',
+        prefix : '',
+        suffix : ''
+    };
+
+    var myCountUp = new CountUp("countUpNumber", 0, 5806, 0, 2.5, options);
+    myCountUp.start();
+
+    //启动团队照片轮播
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
 <!--$.backstretch(["images/bg2.jpg"]);-->
 <!--</script><div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 473px; width: 1440px; z-index: -999999; position: fixed;"><img src="images/bg2.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1440px; height: 675px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -101px;"></div>-->
 
