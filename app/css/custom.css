@@ -1,13 +1,13 @@
 .standout-section{
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 40px;
+    padding-bottom:40px;
     color: #307699;
     font-size: 16px;
     width: auto;
     background-size: cover;
     background: transparent url(../images/header_main_bg_earth.png) no-repeat;
     background-size:100%;
-    font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,Helvetica,sans-serif;
+    font-family:"Microsoft YaHei","WenQuanYi Micro Hei", "Hiragino Sans GB",Arial,Helvetica,sans-serif;
 }
 
 .text-inverse{
@@ -74,18 +74,63 @@
 
 /* 成功案例精选 */
 .card{
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
     padding:15px;
     color: #3c3c3d;
-    background-image: url('../images/paperbg.png');
+    /*background-image: url('../images/paperbg.png');*/
+    background-color: #efefef;
     float:left;
+    /*border-top:5px solid #557ab7;*/
+    border-top: 5px solid #9aba67;
 }
 .card p{
     margin:0;
     font-size:small;
 }
 .card-name{
-    margin-top:10px;
     color: #2b2b2b;
+    padding-bottom:6px;
+    border-bottom:1px solid #c8c8c8;
+    /*font-weight:normal;*/
+}
+
+/** 浮动拨打电话小窗口**/
+.float-box{
+    border-radius: 7px;
+    background:#9aba67;
+    bottom: 60%;
+    font-size: 14px;
+    color:#FFFFFF;
+    width: 50px;
+    height: 50px;
+    right:10px;
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    padding:10px 0px 0px 0px;
+}
+.float-box a{
+    color: #ffffff;
+    animation: shake 2s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 /* 设置中等屏幕宽度下顶部导航条各个条目之间的间隔 */
@@ -129,6 +174,21 @@
     margin-bottom:10px;
 }
 
+/* 公司介绍页面*/
+
+.company-left{
+    margin-top:80px;
+    background: #000;
+    opacity:0.8;
+    padding:20px;
+    font-size:14px;
+    color:#FFFFFF;
+}
+.motto{
+    padding:0;
+    margin: 100px 0 100px 0;
+}
+
 
 /* 团队介绍相关css */
 /*= common css to all effects =*/
@@ -147,7 +207,7 @@
 }
 #teachers h3 {font-size: 24px; font-weight: normal; margin: 10px 0 0; text-transform: uppercase;}
 #teachers h5 {font-size: 16px; font-weight: 300; margin: 0 0 15px; line-height: 22px;}
-#teachers p {font-size: 14px; font-weight: 300; line-height: 22px; padding: 0 30px; margin-bottom: 10px;}
+#teachers p {font-size: 12px; font-weight: 300; line-height: 22px; padding: 0 30px; margin-bottom: 10px;text-align: left}
 /*= common css to all effects end =*/
 /*= effect-3 css =*/
 .effect-3{max-height: 302px; min-height: 302px; overflow: hidden;}
