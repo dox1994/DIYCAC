@@ -1,30 +1,346 @@
 .standout-section{
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 40px;
+    padding-bottom:40px;
     color: #307699;
     font-size: 16px;
     width: auto;
     background-size: cover;
-    background: transparent url(../images/header_main_bg.png) no-repeat;
+    background: transparent url(../images/header_main_bg_earth.png) no-repeat;
     background-size:100%;
-    font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,Helvetica,sans-serif;
+    font-family:"Microsoft YaHei","WenQuanYi Micro Hei", "Hiragino Sans GB",Arial,Helvetica,sans-serif;
 }
-
 .text-inverse{
     color:#fff
 }
+.homepage-tile{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+.homepage-tile .tile-split-title{
+    padding-bottom:45%
+}
 
-.homepage-tile{width:100%;padding:0;margin:0;font-size:18px}.homepage-tile .tile-split-title{padding-bottom:40%}@media (max-width:767px){.homepage-tile .tile-split-title{padding-bottom:150px}}.homepage-tile .tile-split-image{padding-bottom:60%}.homepage-tile .tile-content-text{padding:15px}.homepage-tile .tile-content-full-image{max-width:100%;max-height:100%}.homepage-tile .tile-content-split-image{max-width:70%;max-height:70%;padding-bottom:10px;margin-left:auto;margin-right:auto}.homepage-tile .tile-title{margin-top:10px}.homepage-tile .tile-content-split-image-small{max-width:70%;max-height:70%;padding-bottom:10px;margin-left:auto;margin-right:auto;max-height:50%;max-width:50%}.homepage-tile .tile-full-image,.homepage-tile .tile-split-title,.homepage-tile .tile-split-image,.homepage-tile title-split-status{position:relative}.homepage-tile .tile-inner{position:absolute;width:100%;left:0;right:0;top:0;bottom:0;text-align:center}
+@media (max-width:767px){
+    .homepage-tile .tile-split-title{
+        padding-bottom:150px
+    }
+}
 
-.section-inverse{background-color:#4e4e4e}
-.section-inverse.section-inverse-standout{background-color:#f08c35}
-.section-inverse.section-inverse-standout-alternate{background-color:#1f8fc1}
+.homepage-tile .tile-split-image{
+    margin-top:10%;
+    padding-bottom:45%
+}
+.homepage-tile .tile-content-text{
+    padding-left:15px
+}
+.homepage-tile .tile-content-full-image{
+    max-width:100%;
+    max-height:100%
+}
+.homepage-tile .tile-content-split-image{
+    max-width:70%;
+    max-height:70%;
+    padding-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.homepage-tile .tile-title{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.homepage-tile .tile-content-split-image-small{
+    max-width:70%;
+    max-height:70%;
+    padding-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    max-height:50%;
+    max-width:50%;
+}
+.homepage-tile .tile-full-image,.homepage-tile .tile-split-title,.homepage-tile .tile-split-image,.homepage-tile title-split-status{
+    position:relative;
+}
+.homepage-tile .tile-inner{
+    position:absolute;
+    width:100%;
+    left:0%;
+    right:0;
+    top:0;
+    bottom:0;
+    text-align:left;
+}
+.homepage-tile .tile-icon{
+    color: #4a4a4a;
+    opacity:0.2;
+    /*float:left;*/
+    margin:1rem;
+    font-size:3em;
+}
+.section.section-slim{
+    /*background:-webkit-gradient(linear,left top,45%bottom,from(rgba(255, 255, 255, 0.7)),color-stop(0.55,rgba(255,255,255,0.2)),color-stop(0.55,rgba(255,255,255,0)));*/
+    display:block;
+}
+.section-inverse{
+    background-color:#4e4e4e;
+}
+.section-inverse.section-inverse-standout{
+    background-color: #ff9746;
+}
+.section-inverse.section-inverse-standout-alternate{
+    background-color:#1f8fc1;
+}
+.section.section-green{
+    background-color: #6fd682;
+}
+.section.section-yellow{
+    background-color: #fccb34;
+}
+.section.section-orange{
+    background-color: #f89056;
+}
+.section.section-purple{
+    background-color: #8358a4;
+}
+.section.section-pink{
+    background-color: #e1546e;
+}
+.section.section-blank{
+    background-color:#ffffff;
+}
+.section.section-blue{
+    background-color: #6c9ce9;
+}
+.section.section-background{
+    background-color: #f8fbff;
+}
 
-.section.section-front-end-web{background-color:#3b4784}
-.section.section-android{background-color:#32CD32}
-.section.section-resume-analyst{background-color:#FFD700}
-.section.section-data-analyst{background-color:#3a3872}
-.section.section-ios{background-color:#e7654e}
-.section.section-blank{background-color:#ffffff}
-.section.section-full-stack{background-color:#6b80dd}
-.section.section-intro-to-programming{background-color:#c45381}
+.col-md-8{
+    margin-bottom:0px;
+}
+.section.section-transparent{
+    background: none;
+}
+
+/* 成功案例精选 */
+.card{
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    padding:15px;
+    color: #3c3c3d;
+    /*background-image: url('../images/paperbg.png');*/
+    background-color: #efefef;
+    float:left;
+    /*border-top:5px solid #557ab7;*/
+    border-top: 5px solid #9aba67;
+}
+.card p{
+    margin:0;
+    font-size:small;
+}
+.card-name{
+    color: #2b2b2b;
+    padding-bottom:6px;
+    border-bottom:1px solid #c8c8c8;
+    /*font-weight:normal;*/
+}
+
+/** 浮动拨打电话小窗口**/
+.float-box{
+    border-radius: 7px;
+    background:#9aba67;
+    bottom: 60%;
+    font-size: 14px;
+    color:#FFFFFF;
+    width: 50px;
+    height: 50px;
+    right:10px;
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    padding:10px 0px 0px 0px;
+}
+.float-box a{
+    color: #ffffff;
+    animation: shake 2s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* 设置中等屏幕宽度下顶部导航条各个条目之间的间隔 */
+.hint--right > span {
+    display: block;
+    margin-right: 20px;
+}
+
+/* 精英计划等页面css*/
+.photo_mask_layer{
+    height:100%;
+    width:100%;
+    background-color:#000000; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50);
+}
+.plans-category-bar{
+    margin-bottom:0;
+    width:100%;
+}
+.plans-category-block{
+    font-size:2rem;
+    color: #c9c7c6;
+    margin-bottom:0;
+}
+.plans-category-block .current{
+    color:#FFFFFF;
+}
+.plans-category-block:hover{
+    font-weight:bold;
+}
+.plans-category-bar a{
+    color: #c9c7c6;
+}
+.plans-category-bar .current a{
+    color:#FFFFFF;
+    font-weight:bold;
+}
+.plans-category-bar .text{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/* 公司介绍页面*/
+
+.company-left{
+    margin-top:80px;
+    background: #000;
+    opacity:0.8;
+    padding:20px;
+    font-size:14px;
+    color:#FFFFFF;
+}
+.motto{
+    padding:0;
+    margin: 100px 0 100px 0;
+}
+
+/* 团队介绍相关css */
+.foreign_mentor{
+    text-align:center;
+}
+.foreign_mentor a{
+    border-color: #9aba67;
+    color:#9aba67 !important;
+    font-size:16px !important;
+}
+
+.single-member{ width:280px;
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:0; background-color: #fff; text-align: center; position: relative;}
+.member-image img{
+    max-height:100%;
+     vertical-align: middle;}
+.wrap-single-member{
+    text-align: center;
+}
+
+#teachers h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+}
+#teachers h5 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 15px;
+    line-height: 22px;
+}
+#teachers p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/*= 人物卡片 css =*/
+.effect-3{
+    max-height: 302px;
+    min-height: 302px;
+    overflow: hidden;
+}
+.effect-3 h3{
+    padding-top: 7px;
+    line-height: 33px;
+    color: #3c3c3d;
+}
+.effect-3 h5{
+    color: #3c3c3d;
+}
+.effect-3 .member-image{
+    border-bottom: 5px solid #1b3a57;
+    transition: 0.4s;
+    height: 212px;
+    width: 100%;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+.effect-3 .member-info{
+    transition: 0.4s;
+}
+.effect-3 .member-image img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.effect-3 .social-touch{
+    background-color: #1b3a57;
+    float: left;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    width: 100%;
+    transition: 0.4s;
+}
+.effect-3:hover .member-image{
+    border-bottom: 0;
+    border-radius: 0 0 50px 50px;
+    height: 81px;
+    display: inline-block;
+    overflow: hidden;
+    width: 109px;
+    transition: 0.4s;
+}
+/*= 人物卡片 css end =*/
+@media only screen and (max-width: 980px){
+    .row{
+        width: 100%;
+        margin: 110px 0;
+    }
+    .team-members{
+        text-align: center;
+    }
+    .single-member{
+        float: none;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+}
+/*= Media Query End

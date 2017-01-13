@@ -82,6 +82,8 @@ gulp.task('copy', function(){
         .pipe(gulp.dest('dist/images/svg'));
     gulp.src('app/images/people/*')
         .pipe(gulp.dest('dist/images/people'));
+    gulp.src('app/images/team/*')
+        .pipe(gulp.dest('dist/images/team'));
 });
 
 gulp.task('browserify', function(){
