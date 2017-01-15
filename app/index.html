@@ -501,7 +501,7 @@
         <!-- /#contact -->
 
         <footer class="footer box"  style="margin-top:60px;">
-            <p class="pull-left" style="color: #fff;">© 2001-2016 中美加国际留学 </p>
+            <p class="pull-left" style="color: #fff;">© 2001-<span id="thisYear"></span> 中美加国际留学 </p>
             <div class="clearfix"></div>
         </footer>
         <!-- /footer -->
@@ -541,6 +541,12 @@
     $('.carousel').carousel({
         interval: 2000
     })
+
+    //动态在版权信息处显示当前年份
+    var date=new Date();
+    $('#thisYear').text(
+        date.getFullYear()
+    );
 </script>
 <!--$.backstretch(["images/bg2.jpg"]);-->
 <!--</script><div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 473px; width: 1440px; z-index: -999999; position: fixed;"><img src="images/bg2.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1440px; height: 675px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -101px;"></div>-->
