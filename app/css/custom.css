@@ -4,7 +4,7 @@ body,h1,h2,h3,h4,h5,h6{
 .standout-section{
     padding-top: 40px;
     padding-bottom:40px;
-    color: #307699;
+    color: #51a5cf;
     font-size: 16px;
     width: auto;
     background-size: cover;
@@ -139,23 +139,32 @@ body,h1,h2,h3,h4,h5,h6{
     background-color: #efefef;
     float:left;
     /*border-top:5px solid #557ab7;*/
-    border-top: 5px solid #9aba67;
+    border-top: 5px solid #51a5cf;
 }
 .card p{
     margin:0;
     font-size:small;
 }
+.card img{
+    height:60px;
+    width:60px;
+    float:right;
+}
 .card-name{
     color: #2b2b2b;
     padding-bottom:6px;
-    border-bottom:1px solid #c8c8c8;
-    /*font-weight:normal;*/
+    border-bottom:1px solid #d9d9d9;
+    font-weight:normal;
+}
+/*首页-团队图片轮播*/
+.carousel-inner img{
+    border-radius: 10px;
 }
 
 /** 浮动拨打电话小窗口**/
 .float-box{
     border-radius: 7px;
-    background:#9aba67;
+    background:#51a5cf;
     bottom: 60%;
     font-size: 14px;
     color:#FFFFFF;
@@ -203,35 +212,56 @@ body,h1,h2,h3,h4,h5,h6{
     background-color:#000000; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50);
 }
 .plans-category-bar{
+    text-align: center;
+    height:20%;
     margin-bottom:0;
     width:100%;
 }
+.plans-category-bar img{
+    position: relative;
+    top:-20px;
+}
 .plans-category-block{
+    /*background-color: #eeeeee;*/
     font-size:2rem;
     color: #c9c7c6;
     margin-bottom:0;
 }
 .plans-category-block .current{
-    color:#FFFFFF;
+    color: #379ccf;
 }
 .plans-category-block:hover{
+    color: #379ccf;
     font-weight:bold;
 }
 .plans-category-bar a{
-    color: #c9c7c6;
+    color: rgba(55, 156, 207, 0.51);
+}
+.plans-category-bar a:hover{
+    color: #379ccf;
 }
 .plans-category-bar .current a{
-    color:#FFFFFF;
+    color:#379ccf;
     font-weight:bold;
 }
 .plans-category-bar .text{
     margin-top:10px;
     margin-bottom:10px;
 }
+.plans-category-bar-xs{
+    position: relative;
+    top:-40px;
+}
 .plans-category-bar-xs .current{
-    background-color: #9aba67;
+    background-color: #51a5cf;
     color:#FFFFFF;
     border-radius: 5px;
+}
+.plans-category-bar-xs a{
+    color:#FFFFFF;
+}
+.plans-category-bar-xs .current a{
+    color:#FFFFFF;
 }
 /*计划详情*/
 .plan-content{
@@ -240,7 +270,7 @@ body,h1,h2,h3,h4,h5,h6{
     overflow: auto;
 }
 .plan-content span{
-    color: #6ea211;
+    color: #51a5cf;
 }
 .plan-content h2{
     color:#4e4e4e;
@@ -267,7 +297,7 @@ body,h1,h2,h3,h4,h5,h6{
     border-left: #bbbbbb dashed 1px;
 }
 .plan-content-right-block{
-    background: rgba(154, 186, 103, 0.13);
+    background: rgba(81, 165, 207, 0.13);
     padding:5px 10px 5px 15px;
     margin-bottom:40px;
     border-radius: 10px;
@@ -291,7 +321,7 @@ body,h1,h2,h3,h4,h5,h6{
     position:relative;
     left:-35px;
     top:18px;
-    background: #9aba67;
+    background: #51a5cf;
     border-radius: 50%;
     height:10px;
     width:10px;
@@ -304,7 +334,7 @@ body,h1,h2,h3,h4,h5,h6{
     margin-bottom:30px;
 }
 .plan-content-ins-top h1{
-    color:#6ea211;
+    color: #195785;
     padding-bottom: 10px;
 }
 
@@ -324,6 +354,14 @@ body,h1,h2,h3,h4,h5,h6{
 .motto{
     padding:0;
     margin: 100px 0 100px 0;
+    line-height:30px;
+}
+.motto li{
+    line-height:35px;
+}
+.motto hr{
+    margin:30px 0 50px 0;
+    border-bottom: 2px solid rgba(48, 46, 46, 0.2);
 }
 
 /* 团队介绍相关css */
@@ -331,8 +369,8 @@ body,h1,h2,h3,h4,h5,h6{
     text-align:center;
 }
 .foreign_mentor a{
-    border-color: #9aba67;
-    color:#9aba67 !important;
+    border-color: #51a5cf;
+    color:#51a5cf !important;
     font-size:16px !important;
 }
 
@@ -340,10 +378,17 @@ body,h1,h2,h3,h4,h5,h6{
     margin:0 auto;
     margin-top:20px;
     margin-bottom:20px;
-    padding:0; background-color: #fff; text-align: center; position: relative;}
+    padding:0;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
 .member-image img{
     max-height:100%;
-     vertical-align: middle;}
+    vertical-align: middle;
+}
 .wrap-single-member{
     text-align: center;
 }

@@ -1,20 +1,21 @@
+/*color: #9cbc68 !important;*/
 .spinner,
 .cbp-popup-loadingBox,
 .tp-loader.spinner0,
 #fancybox-loading div {
-    border-left: 3px solid rgba(156,188,104,.15) !important;
-    border-right: 3px solid rgba(156,188,104,.15) !important;
-    border-bottom: 3px solid rgba(156,188,104,.15) !important;
-    border-top: 3px solid rgba(156,188,104,.8) !important;
+    border-left: 3px solid rgba(42, 87, 154, 0.15) !important;
+    border-right: 3px solid rgba(42, 87, 154, 0.15) !important;
+    border-bottom: 3px solid rgba(42, 87, 154, 0.15) !important;
+    border-top: 3px solid rgba(42, 87, 154, 0.15) !important;
 }
 a {
-    color: #9cbc68;
+    color: #51a5cf;
 }
 .post-title a:hover {
-    color: #9cbc68
+    color: #51a5cf
 }
 ul.circled li:before {
-    color: #9cbc68;
+    color: #51a5cf;
 }
 .btn:hover,
 .btn:focus,
@@ -26,8 +27,8 @@ ul.circled li:before {
 .pagination ul > .active > span,
 .open >.dropdown-toggle.btn-default,
 .btn.cbp-filter-item-custom-active {
-    border: 2px solid #9cbc68;
-    color: #9cbc68 !important;
+    border: 2px solid #51a5cf;
+    color: #51a5cf !important;
 }
 .btn-green:hover,
 .btn-green:focus,
@@ -67,106 +68,106 @@ ul.circled li:before {
 .nav > li > a:hover,
 .nav > li.current > a {
     background: none;
-    color: #9cbc68 !important;
+    color: #51a5cf !important;
 }
 .services-1 .icon i.icn {
-    color: #9cbc68;
+    color: #51a5cf;
 }
 .services-2 i {
-    color: #9cbc68;
+    color: #51a5cf;
 }
 .services-2 a:hover {
-    color: #9cbc68 !important
+    color: #51a5cf !important
 }
 .services-3 i {
-    color: #9cbc68;
+    color: #51a5cf;
 }
 .progress-list li em {
-    color: #9cbc68;
+    color: #51a5cf;
 }
 .progress.plain {
-    border: 1px solid #9cbc68;
+    border: 1px solid #51a5cf;
 }
 .progress.plain .bar {
-    background: #9cbc68;
+    background: #51a5cf;
 }
 .tabs-top .tab a:hover,
 .tabs-top .tab.active a {
-    color: #9cbc68;
-    border-color: #9cbc68;
+    color: #51a5cf;
+    border-color: #51a5cf;
 }
 .panel-title:hover,
 .panel-active .panel-heading .panel-title {
-    border: 2px solid #9cbc68
+    border: 2px solid #51a5cf
 }
 .panel-title > a:hover,
 .panel-active a {
-    color: #9cbc68
+    color: #51a5cf
 }
 .tooltip-inner {
-    background-color: #9cbc68;
+    background-color: #51a5cf;
 }
 .tooltip.top .tooltip-arrow,
 .tooltip.top-left .tooltip-arrow,
 .tooltip.top-right .tooltip-arrow {
-    border-top-color: #9cbc68
+    border-top-color: #51a5cf
 }
 .tooltip.right .tooltip-arrow {
-    border-right-color: #9cbc68
+    border-right-color: #51a5cf
 }
 .tooltip.left .tooltip-arrow {
-    border-left-color: #9cbc68
+    border-left-color: #51a5cf
 }
 .tooltip.bottom .tooltip-arrow,
 .tooltip.bottom-left .tooltip-arrow,
 .tooltip.bottom-right .tooltip-arrow {
-    border-bottom-color: #9cbc68
+    border-bottom-color: #51a5cf
 }
 .hint:after,
 [data-hint]:after {
-    background: #9cbc68;
+    background: #51a5cf;
 }
 .hint--top:before {
-    border-top-color: #9cbc68
+    border-top-color: #51a5cf
 }
 .hint--bottom:before {
-    border-bottom-color: #9cbc68
+    border-bottom-color: #51a5cf
 }
 .hint--left:before {
-    border-left-color: #9cbc68
+    border-left-color: #51a5cf
 }
 .hint--right:before {
-    border-right-color: #9cbc68
+    border-right-color: #51a5cf
 }
 .cbp-popup-singlePage .cbp-popup-prev:hover:before,
 .cbp-popup-singlePage .cbp-popup-next:hover:before,
 .cbp-popup-singlePage .cbp-popup-close:hover:before,
 .cbp-popup-singlePageInline .cbp-popup-close:hover:before {
-    border: 2px solid #9cbc68 !important;
-    color: #9cbc68 !important;
+    border: 2px solid #51a5cf !important;
+    color: #51a5cf !important;
 }
 .sp-selected-thumbnail {
-    border-bottom: 3px solid #9cbc68
+    border-bottom: 3px solid #51a5cf
 }
 .meta a:hover {
-    color: #9cbc68
+    color: #51a5cf
 }
 .sidebox a:hover {
-    color: #9cbc68 !important
+    color: #51a5cf !important
 }
 ul.layout-switcher li a.active {
-    color: #9cbc68;
-    border-color: #9cbc68;
+    color: #51a5cf;
+    border-color: #51a5cf;
 }
 #comments .info h2 a:hover {
-    color: #9cbc68
+    color: #51a5cf
 }
 #comments a.reply-link:hover {
-    color: #9cbc68
+    color: #51a5cf
 }
 .contact-info li a:hover {
-    color: #9cbc68
+    color: #51a5cf
 }
 .pricing .plan h4 span {
-    color: #9cbc68
+    color: #51a5cf
 }
