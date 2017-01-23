@@ -243,68 +243,88 @@ window.onload = init();
  /*-----------------------------------------------------------------------------------*/
 (function($, window, document, undefined) {
     'use strict';
-    var gridContainer = $('#grid-container'),
+    var unorderList = $("#sample_unorder_list"),
+        gridContainer = $('#grid-container'),
         filtersContainer = $('#filters-container'),
         wrap, filtersCallback;
+
+    /**
+     * for current implementation, sampleObj should be the same obj in past_samples.json.
+     */
+    function getSampleListText(sampleObj) {
+        return '<li class="cbp-item frame ' + sampleObj.category +
+            ' sample_display"><div class="cbp-item-wrapper"><div class="cbp-caption-defaultWrap card"><h3 class="card-name">' +
+            sampleObj.name + '</h3><p><b>录取学校: </b>' + sampleObj.acceptedSchool + '</p><p><b>申请专业: </b>' + sampleObj.major +
+            '</p><p><b>学术背景: </b>' + sampleObj.background + '</p></div></div></li>';
+    }
+
     /*********************************
-     init cubeportfolio
+     get all samples from backend
      *********************************/
-    gridContainer.cubeportfolio({
-        layoutMode: 'grid',
-        rewindNav: true,
-        scrollByPage: false,
-        defaultFilter: '*',
-        animationType: 'quicksand',
-        gapHorizontal: 10,
-        gapVertical: 10,
-        gridAdjustment: 'responsive',
-        mediaQueries: [{
-            width: 1100,
-            cols: 4
-        }, {
-            width: 800,
-            cols: 3
-        }, {
-            width: 500,
-            cols: 2
-        }, {
-            width: 320,
-            cols: 1
-        }],
-        caption: 'fadeIn',
-        displayType: 'sequentially',
-        displayTypeSpeed: 100,
+    $.getJSON( "/get_past_examples", function(result) {
+        result.map(function(item) {
+            unorderList.append(getSampleListText(item));
+        });
+        /*********************************
+         init cubeportfolio
+         *********************************/
+        gridContainer.cubeportfolio({
+            layoutMode: 'grid',
+            rewindNav: true,
+            scrollByPage: false,
+            defaultFilter: '*',
+            animationType: 'quicksand',
+            gapHorizontal: 10,
+            gapVertical: 10,
+            gridAdjustment: 'responsive',
+            mediaQueries: [{
+                width: 1100,
+                cols: 4
+            }, {
+                width: 800,
+                cols: 3
+            }, {
+                width: 500,
+                cols: 2
+            }, {
+                width: 320,
+                cols: 1
+            }],
+            caption: 'fadeIn',
+            displayType: 'sequentially',
+            displayTypeSpeed: 100,
 
-        // singlePage popup
-        singlePageDelegate: '.cbp-singlePage',
-        singlePageDeeplinking: true,
-        singlePageStickyNavigation: true,
-        singlePageCounter: '',
-        singlePageCallback: function(url, element) {
-            // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+            // singlePage popup
+            singlePageDelegate: '.cbp-singlePage',
+            singlePageDeeplinking: true,
+            singlePageStickyNavigation: true,
+            singlePageCounter: '',
+            singlePageCallback: function(url, element) {
+                // to update singlePage content use the following method: this.updateSinglePage(yourContent)
 
 
-            $('a[data-rel]').each(function () {
-                $(this).attr('rel', $(this).data('rel'));
-            });
-
-            var t = this;
-
-            $.ajax({
-                url: url,
-                type: 'GET',
-                dataType: 'html',
-                timeout: 5000
-            })
-                .done(function(result) {
-                    t.updateSinglePage(result);
-                })
-                .fail(function() {
-                    t.updateSinglePage("Error! Please refresh the page!");
+                $('a[data-rel]').each(function () {
+                    $(this).attr('rel', $(this).data('rel'));
                 });
-        }
-    });
 
+                var t = this;
+
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'html',
+                    timeout: 5000
+                })
+                    .done(function(result) {
+                        t.updateSinglePage(result);
+                    })
+                    .fail(function() {
+                        t.updateSinglePage("Error! Please refresh the page!");
+                    });
+            }
+        });
+
+    });
 
     /*********************************
      add listener for filters
