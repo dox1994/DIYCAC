@@ -1,5 +1,12 @@
 $(document).ready(function () {
     "use strict";
+
+
+    /*动态在版权信息处显示当前年份 */
+    var date=new Date();
+    $('#thisYear').text(
+        date.getFullYear()
+    );
     /*-----------------------------------------------------------------------------------*/
     /*	VIDEO
      /*-----------------------------------------------------------------------------------*/
@@ -253,7 +260,8 @@ window.onload = init();
      */
     function getSampleListText(sampleObj) {
         return '<li class="cbp-item frame ' + sampleObj.category +
-            ' sample_display"><div class="cbp-item-wrapper"><div class="cbp-caption-defaultWrap card"><h3 class="card-name">' +
+            ' sample_display"><div class="cbp-item-wrapper"><div class="cbp-caption-defaultWrap card">' +
+            '<img src="'+sampleObj.image+'"/>'+'<h3 class="card-name">' +
             sampleObj.name + '</h3><p><b>录取学校: </b>' + sampleObj.acceptedSchool + '</p><p><b>申请专业: </b>' + sampleObj.major +
             '</p><p><b>学术背景: </b>' + sampleObj.background + '</p></div></div></li>';
     }
@@ -468,3 +476,4 @@ $( function() {
         $container.isotope('layout');
     });
 });
+

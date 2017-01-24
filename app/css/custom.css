@@ -393,16 +393,8 @@ body,h1,h2,h3,h4,h5,h6{
 }
 
 /* 团队介绍相关css */
-.foreign_mentor{
-    text-align:center;
-}
-.foreign_mentor a{
-    border-color: #51a5cf;
-    color:#51a5cf !important;
-    font-size:16px !important;
-}
-
-.single-member{ width:280px;
+.single-member{
+    width:280px;
     margin:0 auto;
     margin-top:20px;
     margin-bottom:20px;
@@ -505,4 +497,44 @@ body,h1,h2,h3,h4,h5,h6{
         vertical-align: bottom;
     }
 }
-/*= Media Query End
+/*= Media Query End*/
+/*海外mentor*/
+.single-mentor{
+    margin:20px auto;
+    /*margin-bottom:40px;*/
+    width:280px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    font-size: 12px;
+    text-align: left;
+    padding:0;
+    overflow: hidden;
+}
+.single-mentor img{
+    width:115px;
+    height:110px;
+    float:left;
+    border-right:5px solid #1b3a57;
+    margin-right:10px;
+}
+.single-mentor h3{
+    margin:14px 0 7px 0;
+    font-size: 17px;
+    color:#3c3c3d;
+    /*font-weight:normal;*/
+}
+.single-mentor p{
+    margin:0;
+    line-height:20px;
+    color: #676768;
+}
+.mentor-more-consult{
+    margin-top:100px;
+    text-align:center;
+}
+.more-mentors-button{
+    color: #1995c9;
+    text-align: center;
+    cursor:pointer;
+}
