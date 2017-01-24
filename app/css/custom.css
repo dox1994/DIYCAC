@@ -1,7 +1,10 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family:"Microsoft YaHei","WenQuanYi Micro Hei", "Hiragino Sans GB",Arial,Helvetica,sans-serif;
+}
 .standout-section{
     padding-top: 40px;
     padding-bottom:40px;
-    color: #307699;
+    color: #51a5cf;
     font-size: 16px;
     width: auto;
     background-size: cover;
@@ -121,6 +124,9 @@
 .section.section-transparent{
     background: none;
 }
+.homepage-tile-numbers{
+    font-family: 'Raleway';
+}
 
 /* 成功案例精选 */
 .card{
@@ -133,23 +139,32 @@
     background-color: #efefef;
     float:left;
     /*border-top:5px solid #557ab7;*/
-    border-top: 5px solid #9aba67;
+    border-top: 5px solid #51a5cf;
 }
 .card p{
     margin:0;
     font-size:small;
 }
+.card img{
+    height:60px;
+    width:60px;
+    float:right;
+}
 .card-name{
     color: #2b2b2b;
     padding-bottom:6px;
-    border-bottom:1px solid #c8c8c8;
-    /*font-weight:normal;*/
+    border-bottom:1px solid #d9d9d9;
+    font-weight:normal;
+}
+/*首页-团队图片轮播*/
+.carousel-inner img{
+    border-radius: 10px;
 }
 
 /** 浮动拨打电话小窗口**/
 .float-box{
     border-radius: 7px;
-    background:#9aba67;
+    background:#51a5cf;
     bottom: 60%;
     font-size: 14px;
     color:#FFFFFF;
@@ -189,38 +204,170 @@
     margin-right: 20px;
 }
 
-/* 精英计划等页面css*/
+/* 各留学计划页面css*/
+/* 顶部计划切换标签*/
 .photo_mask_layer{
     height:100%;
     width:100%;
     background-color:#000000; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50);
 }
 .plans-category-bar{
+    text-align: center;
+    height:20%;
     margin-bottom:0;
     width:100%;
 }
+.plans-category-bar img{
+    position: relative;
+    top:-20px;
+}
 .plans-category-block{
+    /*background-color: #eeeeee;*/
     font-size:2rem;
     color: #c9c7c6;
     margin-bottom:0;
 }
 .plans-category-block .current{
-    color:#FFFFFF;
+    color: #379ccf;
 }
 .plans-category-block:hover{
+    color: #379ccf;
     font-weight:bold;
 }
 .plans-category-bar a{
-    color: #c9c7c6;
+    color: rgba(55, 156, 207, 0.51);
+}
+.plans-category-bar a:hover{
+    color: #379ccf;
 }
 .plans-category-bar .current a{
-    color:#FFFFFF;
+    color:#379ccf;
     font-weight:bold;
 }
 .plans-category-bar .text{
     margin-top:10px;
     margin-bottom:10px;
 }
+.plans-category-bar-xs{
+    position: relative;
+    top:-40px;
+}
+.plans-category-bar-xs .current{
+    background-color: #51a5cf;
+    color:#FFFFFF;
+    border-radius: 5px;
+}
+.plans-category-bar-xs a{
+    color:#FFFFFF;
+}
+.plans-category-bar-xs .current a{
+    color:#FFFFFF;
+}
+/*计划详情*/
+.plan-content{
+    margin-top:0;
+    padding-top:60px;
+    overflow: auto;
+}
+.plan-content span{
+    color: #51a5cf;
+}
+.plan-content h2{
+    color:#4e4e4e;
+    text-align: center;
+}
+.plan-content-left{
+    padding:30px;
+    line-height:40px;
+}
+.plan-content-left li{
+    line-height: 30px;
+}
+@media(min-width: 767px){
+    .plan-content-ins-left  .plan-content-icon-dot{
+        background:transparent;
+    }
+}
+@media (max-width: 767px){
+    .plan-content-ins-left{
+        border-left: #bbbbbb dashed 1px;
+    }
+}
+.plan-content-right{
+    border-left: #bbbbbb dashed 1px;
+}
+.plan-content-right-block{
+    background: rgba(81, 165, 207, 0.13);
+    padding:5px 10px 5px 15px;
+    margin-bottom:40px;
+    border-radius: 10px;
+}
+.plan-content-right-block:hover{
+    box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.55);
+}
+.plan-content-right-block .title{
+    color: #4e4e4e;
+    font-size:15px;
+    font-weight:normal;
+}
+.plan-content-right-block .title b{
+    font-size:18px;
+    font-weight: bold;
+}
+.plan-content-right-block p{
+    font-size:14px;
+}
+.plan-content-icon-dot{
+    position:relative;
+    left:-35px;
+    top:18px;
+    background: #51a5cf;
+    border-radius: 50%;
+    height:10px;
+    width:10px;
+}
+.plan-content-ins-top{
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom:30px;
+}
+.plan-content-ins-top h1{
+    color: #195785;
+    padding-bottom: 10px;
+}
+.plans-more{
+    padding:0;
+    margin:50px 0 100px 0;
+    line-height:30px;
+}
+.plans-more h2{
+    color:#3c3c3d;
+}
+.plans-more h5{
+    color:#3c3c3d;
+}
+.plans-more li{
+    line-height:35px;
+}
+.plans-more hr{
+    margin:30px 0 50px 0;
+    border-bottom: 2px solid rgba(48, 46, 46, 0.2);
+}
+.plans-more-consult .btn{
+    color: #379ccf !important;
+    border-color: #379ccf !important;
+    font-size:16px;
+    font-weight:normal;
+}
+.plans-more-consult .btn:hover{
+    color: #ffffff !important;
+    background-color: #379ccf !important;
+}
+
+
+
 
 /* 公司介绍页面*/
 
@@ -235,26 +382,33 @@
 .motto{
     padding:0;
     margin: 100px 0 100px 0;
+    line-height:30px;
+}
+.motto li{
+    line-height:35px;
+}
+.motto hr{
+    margin:30px 0 50px 0;
+    border-bottom: 2px solid rgba(48, 46, 46, 0.2);
 }
 
 /* 团队介绍相关css */
-.foreign_mentor{
-    text-align:center;
-}
-.foreign_mentor a{
-    border-color: #9aba67;
-    color:#9aba67 !important;
-    font-size:16px !important;
-}
-
-.single-member{ width:280px;
+.single-member{
+    width:280px;
     margin:0 auto;
     margin-top:20px;
     margin-bottom:20px;
-    padding:0; background-color: #fff; text-align: center; position: relative;}
+    padding:0;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
 .member-image img{
     max-height:100%;
-     vertical-align: middle;}
+    vertical-align: middle;
+}
 .wrap-single-member{
     text-align: center;
 }
@@ -343,4 +497,44 @@
         vertical-align: bottom;
     }
 }
-/*= Media Query End
+/*= Media Query End*/
+/*海外mentor*/
+.single-mentor{
+    margin:20px auto;
+    /*margin-bottom:40px;*/
+    width:280px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    font-size: 12px;
+    text-align: left;
+    padding:0;
+    overflow: hidden;
+}
+.single-mentor img{
+    width:115px;
+    height:110px;
+    float:left;
+    border-right:5px solid #1b3a57;
+    margin-right:10px;
+}
+.single-mentor h3{
+    margin:14px 0 7px 0;
+    font-size: 17px;
+    color:#3c3c3d;
+    /*font-weight:normal;*/
+}
+.single-mentor p{
+    margin:0;
+    line-height:20px;
+    color: #676768;
+}
+.mentor-more-consult{
+    margin-top:100px;
+    text-align:center;
+}
+.more-mentors-button{
+    color: #1995c9;
+    text-align: center;
+    cursor:pointer;
+}
