@@ -1,0 +1,42 @@
+[
+  {
+    "name": "李同学",
+    "acceptedSchool": "麻省理工",
+    "major": "金融工程",
+    "background": "985, 211, TOEFL 112, GMAT 740",
+    "category": "engineering",
+    "rank": 0
+  },
+  {
+    "name": "李同学",
+    "acceptedSchool": "麻省理工",
+    "major": "金融",
+    "background": "985, 211, TOEFL 112, GMAT 740",
+    "category": "engineering",
+    "rank": 1
+  },
+  {
+    "name": "李同学",
+    "acceptedSchool": "麻省理工",
+    "major": "金融",
+    "background": "985, 211, TOEFL 112, GMAT 740",
+    "category": "science",
+    "rank": 2
+  },
+  {
+    "name": "李同学",
+    "acceptedSchool": "麻省理工",
+    "major": "金融",
+    "background": "985, 211, TOEFL 112, GMAT 740",
+    "category": "business",
+    "rank": 3
+  },
+  {
+    "name": "李同学",
+    "acceptedSchool": "麻省理工",
+    "major": "金融",
+    "background": "985, 211, TOEFL 112, GMAT 740",
+    "category": "doctor",
+    "rank": 4
+  }
+]
