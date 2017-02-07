@@ -165,7 +165,7 @@ body,h1,h2,h3,h4,h5,h6{
 .float-box{
     border-radius: 7px;
     background:#51a5cf;
-    bottom: 60%;
+    bottom: 75%;
     font-size: 14px;
     color:#FFFFFF;
     width: 50px;
@@ -251,6 +251,8 @@ body,h1,h2,h3,h4,h5,h6{
 .plans-category-bar-xs{
     position: relative;
     top:-40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 .plans-category-bar-xs .current{
     background-color: #51a5cf;
@@ -538,3 +540,19 @@ body,h1,h2,h3,h4,h5,h6{
     text-align: center;
     cursor:pointer;
 }
+
+/*对53kf客服系统样式进行修改*/
+/*屏蔽53kf的广告*/
+#iconDivMain1 div:nth-child(2),#mnkf_ad,#ad_html,#hz6d_iframe_logo {
+    display: none !important;
+}
+
+/*!*对话界面左浮动*!
+.mnkf_content_head{
+    float:left;
+}
+.mnkf_content_body{
+    float:left;
+}*/
+
+
