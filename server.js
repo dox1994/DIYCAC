@@ -13,11 +13,6 @@ app.get('/get_past_examples', function(req, res)
     res.end(JSON.stringify(responseObj));
 });
 
-app.get('/*', function(req, res)
-{
-    res.sendFile(__dirname + '/app/index.html');
-});
-
 function readJsonFileSync(filepath, encoding){
 
     if (typeof (encoding) == 'undefined'){
