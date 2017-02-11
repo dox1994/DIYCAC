@@ -555,4 +555,73 @@ body,h1,h2,h3,h4,h5,h6{
     float:left;
 }*/
 
+/* 职业测试问卷调查页面样式 */
+.questionnaire-top{
+    background-color: #183653;
+    padding:20px;
+    overflow: auto;
+    text-align: center;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.questionnaire-top img{
+    height:40px;
+    float:left;
+}
+.questionnaire-top p{
+    color:#FFFFFF;
+    float:left;
+    font-size:20px;
+    margin-top:5px;
+    margin-left:10px;
+}
+.questionnaire-body{
+    padding:30px;
+    overflow:auto;
+    line-height:25px;
+    margin:20px auto;
+}
+.questionnaire-bottom{
+    margin-top:60px;
+    width:100%;
+    background-color:#183653;
+    color:#FFFFFF;
+    padding:20px;
+    overflow:auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.questionnaire-button-long{
+    width:100%;
+}
+.questionnaire-button-box{
+    margin-top:20px;
+}
+.questionnaire-button-box a{
+    width:45%;
+}
+.questionnaire-button-previous{
+    float:left;
+}
+.questionnaire-button-next{
+    float:right;
+}
+.questionnaire-body .birthday-picker select{
+    width:auto;
+    display: inline-block;
+    margin-right:5px;
+}
+.swiper-slide{
+    padding:30px;
+    /*overflow: auto;*/
+    /*margin-right:10px;*/
+}
+.swiper-pagination{
+    width:100%;
+    height:3px;
+    color:#00A8FF;
+}
+.hidden-submit-box{
+    padding:0 40px;
+    display:none;
+    margin-bottom:10px;
+}
 

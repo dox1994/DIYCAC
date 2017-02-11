@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中美加国际职业性格测试</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/swiper-3.4.1.min.css" rel="stylesheet">
+    <link href="css/jquery-labelauty.css" rel="stylesheet">
+    <style type="text/css">
+        body{ background-color:#ffffff;}
+        ul { list-style-type:none;padding:0;}
+        li { display:block;}
+        li { margin:10px 0;}
+        input.labelauty + label { font:15px "Microsoft Yahei";}
+    </style>
+
+</head>
+<body>
+<div class="questionnaire-top">
+    <a href="questionnaire.html"><img src="images/caclogo-full.png"/></a>
+    <p>中美加国际职业性格测试</p>
+</div>
+<div class="swiper-pagination"></div>
+<form id="myForm" name="myForm" action="/questionnaire" method="post">
+<div class="questionnaire-body swiper-container">
+    <div class="hidden-submit-box">
+        <a class="btn btn-success questionnaire-button-long" onclick="checkAndSubmit()">真的都填完了，提交测试</a>
+    </div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <p>为了帮助客户更好的选择适合自己的职业发展方向，中美加国际引入了国际最为流行的<b>职业人格评估工具MBTI</b>作为客户背景评估和分析的科学依据，从而能够保证我们为客户提供最准确，最个性化的留学申请方案。</p>
+            <br/>
+            <p><b>注意事项：</b>性格没有好与坏，测试的目的是反映最真实的自己，而不是别人所期待的你。<b style="color:#183653;">请最大程度放松下来，选择当你面临下述这些情况时不由自主、自然和不假思索的决定或倾向。</b></p>
+            <br/>
+            <p>以下所有问题均为<b>必填/必选</b>。</p>
+            <br/><br/>
+            <button class="btn btn-primary btn-lg questionnaire-button-long questionnaire-button-next" id="start-btn"> 开始测试 </button>
+        </div>
+        <div class="swiper-slide" id="q0">
+            <p>请提供您的基本信息：</p>
+            <br/>
+            <div class="form-group">
+                <p><b>姓名</b></p>
+                <input type="text" name="name" class="form-control"  placeholder="必填"/>
+            </div>
+            <div class="form-group">
+                <p><b>学校</b></p>
+                <input type="text" name="school" class="form-control"  placeholder="必填"/>
+            </div>
+            <div class="form-group birthday-picker">
+                <p><b>生日</b></p>
+                <select id="birthday_year" name="birthday_year" class="form-control"></select>年 &nbsp;
+                <select id="birthday_month"  name="birthday_month" class="form-control"></select>月 &nbsp;
+                <select id="birthday_day"  name="birthday_day" class="form-control inline"></select>日 &nbsp;
+                &nbsp;<span id="zodiacShow"></span>
+                <input type="hidden" id="zodiac" name="zodiac"/>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+            <p style="float:left;color:#88888a;">左右滑动也可切换题目哦</p>
+        </div>
+        <div class="swiper-slide" id="q1">
+            <p>1. 我倾向从何处得到力量：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="E"  name="q1" data-labelauty="别人"></li>
+                    <li><input type="radio" value="I"  name="q1" data-labelauty="我自己的想法"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q2">
+            <p>2. 当我参加一个社交聚会时，我倾向有更多的力气：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="E"  name="q2" data-labelauty="在夜色很深时，一旦我开始投入，也许就是最晚离开的那一个。"></li>
+                    <li><input type="radio" value="I"  name="q2" data-labelauty="在夜晚开始的时候，我就疲倦了并且想回家"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q3">
+            <p>3. 下列哪一种听起来比较吸引人：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="E"  name="q3" data-labelauty="与我的情人到有很多人且社交活动频繁的地方"></li>
+                    <li><input type="radio" value="I"  name="q3" data-labelauty="待在家中与我的情人做一些特别的事情，例如说观赏一部有趣的录像带并享用我最爱的外带食物"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q4">
+            <p>4. 在约会中，我通常：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="E" name="q4" data-labelauty="整体来说蛮健谈的"></li>
+                    <li><input type="radio" value="I" name="q4" data-labelauty="较安静并保留，直到我觉得舒服"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q5">
+            <p>5. 过去，我倾向遇见我大部分情人：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="E" name="q5" data-labelauty="在宴会中、夜总会、工作上、休闲活动中、会议上、或当朋友介绍我给他们的朋友时"></li>
+                    <li><input type="radio" value="I" name="q5" data-labelauty="透过私人的方式，例如个人广告、录像约会、或是由亲密的朋友和家人介绍"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q6">
+            <p>6. 我倾向拥有：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="E" name="q6" data-labelauty="很多认识的人和很亲密的朋友"></li>
+                    <li><input type="radio" value="I" name="q6" data-labelauty="一些很亲密的朋友和一些认识的人"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q7">
+            <p>7. 过去，我爱的人和情人倾向对我说这些：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="E" name="q7" data-labelauty="你难道不可以安静一点吗？ "></li>
+                    <li><input type="radio" value="I" name="q7" data-labelauty="可以请你从你的世界中出来一下吗？"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q8">
+            <p>8. 我倾向透过以下方式收集信息：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="N" name="q8" data-labelauty="我对有可能发生之事的想象和期望"></li>
+                    <li><input type="radio" value="S" name="q8" data-labelauty="我对目前状况实际认知"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q9">
+            <p>9. 我倾向相信：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="N" name="q9" data-labelauty="我的直觉"></li>
+                    <li><input type="radio" value="S" name="q9" data-labelauty="我直接的观察和现成的经验"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q10">
+            <p>10. 当我置身于一段关系中时，我倾向相信：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="N" name="q10" data-labelauty="永远有进步的空间"></li>
+                    <li><input type="radio" value="S" name="q10" data-labelauty="若它没有被破坏，别修补它"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q11">
+            <p>11. 当我对一个约会觉得放心时，我倾向谈论：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="N" name="q11" data-labelauty="未来，关于改进或发明事物，和生活的种种可能性。例如说，我也许会谈论一个新的科学发明，或一个更好的方法来表达我的感受"></li>
+                    <li><input type="radio" value="S" name="q11" data-labelauty="实际的，具体的，关于「此时此地」的事物。例如说，我也许会谈论品酒的好方法，或我即将耍参加的新奇旅程"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q12">
+            <p>12. 我是这种人：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="N" name="q12" data-labelauty="喜欢先看整个大局面"></li>
+                    <li><input type="radio" value="S" name="q12" data-labelauty="喜欢先拿握细节"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q13">
+            <p>13. 我是这种人：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="N" name="q13" data-labelauty="与其活在现实中，我选择活在我的想象里"></li>
+                    <li><input type="radio" value="S" name="q13" data-labelauty="与其活在我的想象里，我选择活在现实中"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q14">
+            <p>14. 我通常：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="N" name="q14" data-labelauty="偏向于去想象一大堆关于即将来临之约会的事情"></li>
+                    <li><input type="radio" value="S" name="q14" data-labelauty="偏向于拘紧地想象即将来临的约会，只期待让它自然地发生"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q15">
+            <p>15. 我倾向如此做决定：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="F" name="q15" data-labelauty="首先依我的心意，然后依我的逻辑"></li>
+                    <li><input type="radio" value="T" name="q15" data-labelauty="首先依我的逻辑，然后依我的心意"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q16">
+            <p>16. 我倾向比较能够察觉到：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="F" name="q16" data-labelauty="当人们需要情感上的支持时"></li>
+                    <li><input type="radio" value="T" name="q16" data-labelauty="当人们不合逻辑时"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q17">
+            <p>17. 当和某人分手时：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="F" name="q17" data-labelauty="我通常让自己的情绪深陷其中，很难才能抽身而出"></li>
+                    <li><input type="radio" value="T" name="q17" data-labelauty="虽然我觉得受伤，但一旦下定决心，我会直截了当地将过去恋人的影子甩开"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q18">
+            <p>18. 当与一个人交往时，我倾向评量：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="F" name="q18" data-labelauty="情感上的兼容性：表达爱意和对另一半的需求很敏感"></li>
+                    <li><input type="radio" value="T" name="q18" data-labelauty="智能上的兼容性：沟通重要的想法：客观地讨论和辩论事情"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q19">
+            <p>19. 当我不同意我情人的想法时：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="F" name="q19" data-labelauty="我尽可能地避免伤害对方的感受；若是会对对方造成伤害的话，我就不会说"></li>
+                    <li><input type="radio" value="T" name="q19" data-labelauty="我通常毫无保留地说话，并且对我的情人直言直语，因为对的就是对的"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q20">
+            <p>20. 认识我的人倾向形容我为：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="F" name="q20" data-labelauty="热情和敏感"></li>
+                    <li><input type="radio" value="T" name="q20" data-labelauty="逻辑和明确"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q21">
+            <p>21. 我把大部分和别人的相遇视为：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="F" name="q21" data-labelauty="友善及重要的"></li>
+                    <li><input type="radio" value="T" name="q21" data-labelauty="另有目的"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q22">
+            <p>22. 若我有时间和金钱，我的朋友邀请我到国外度假，并且在一天前才通知，我会：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="J" name="q22" data-labelauty="必须先检查我的时间表"></li>
+                    <li><input type="radio" value="P" name="q22" data-labelauty="立即收拾行装"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q23">
+            <p>23. 在第一次约会中，我：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="J" name="q23" data-labelauty="若我所约的人来迟了，我会很不高兴"></li>
+                    <li><input type="radio" value="P" name="q23" data-labelauty="一点都不在乎，因为我自己已常常迟到"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q24">
+            <p>24. 我偏好：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="J" name="q24" data-labelauty="事先知道约会的行程：要去哪里、有谁参加、我会在哪里多久、该如何打扮"></li>
+                    <li><input type="radio" value="P" name="q24" data-labelauty="让约会自然地发生，不做先前太多的计划"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q25">
+            <p>25. 我选择的生活循环着：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="J" name="q25" data-labelauty="日程表和组织"></li>
+                    <li><input type="radio" value="P" name="q25" data-labelauty="自然发生和弹性"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q26">
+            <p>26. 哪一项较为常见：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="J" name="q26" data-labelauty="我准时出席而其它人迟到"></li>
+                    <li><input type="radio" value="P" name="q26" data-labelauty="其它人都准则出席而我迟到"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q27">
+            <p>27. 我是喜欢……的人：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="J" name="q27" data-labelauty="下定决心并且做出最后肯定的结论"></li>
+                    <li><input type="radio" value="P" name="q27" data-labelauty="开放我的选择并且持续收集信息"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q28">
+            <p>28. 我是这类型的人：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="J" name="q28" data-labelauty="喜欢在一个时间里专心于一件事情直到完成"></li>
+                    <li><input type="radio" value="P" name="q28" data-labelauty="享受同时进行好几件事情"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q29">
+            <p>29. 海外留学时，我更喜欢：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="A" name="q29" data-labelauty="结交华人圈朋友"></li>
+                    <li><input type="radio" value="B" name="q29" data-labelauty="结交更多外国朋友"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q30">
+            <p>30. 海外留学遇到困难时：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="A" name="q30" data-labelauty="自己独立解决"></li>
+                    <li><input type="radio" value="B" name="q30" data-labelauty="寻求朋友和国内家人帮助"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <div class="questionnaire-button-box">
+                <a class="btn btn-default questionnaire-button-previous">上一题</a>
+                <a class="btn btn-primary questionnaire-button-next">下一题</a>
+            </div>
+        </div>
+        <div class="swiper-slide" id="q31">
+            <p>31. 每次小组作业时我的角色：</p>
+            <div class="form-group">
+                <ul class="dowebok">
+                    <li><input type="radio" value="A"  name="q31" data-labelauty="领导者，勇于面对挑战"></li>
+                    <li><input type="radio" value="B"  name="q31" data-labelauty="组员，积极参与工作"></li>
+                </ul>
+            </div>
+            <br/><br/>
+            <a class="btn btn-success questionnaire-button-long shown-submit-button" onclick="checkAndSubmit()">提交测试</a>
+        </div>
+    </div>
+</div>
+</form>
+
+<div class="questionnaire-bottom">
+    <p>&copy;中美加国际留学</p>
+</div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/birthday.js"></script>
+<script src="js/swiper-3.4.1.min.js"></script>
+<script src="js/jquery-labelauty.js"></script>
+
+<script>
+    //生日选择器插件
+    $(function () {
+        $.ms_DatePicker({
+            YearSelector: "#birthday_year",
+            MonthSelector: "#birthday_month",
+            DaySelector: "#birthday_day"
+        });
+        $.ms_DatePicker();
+    });
+    //根据生日的月份和日期，计算星座。
+    $('.birthday-picker select').change(function() {
+            var m=$('#birthday_month').val();
+            var d=$('#birthday_day').val();
+            if(m!=0 && d!=0){
+                var zodiac=getZodiac(m,d)+'座';
+                $('#zodiacShow').text(zodiac);
+                $('#zodiac').val(zodiac);
+            }
+        }
+    );
+    function getZodiac(m,d){
+        return "魔羯水瓶双鱼牡羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯".substr(m*2-(d<"102223444433".charAt(m-1)- -19)*2,2);
+    }
+    //翻页效果插件
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.questionnaire-button-next',
+        prevButton: '.questionnaire-button-previous',
+        pagination: '.swiper-pagination',
+        paginationType: 'progress'
+    });
+    //单选框美化插件
+    $(function(){
+        $(':input').labelauty();
+    });
+
+    //检查和提交表单
+    function checkAndSubmit(){
+        //首先检查表单所有项目是否均已填写
+        var formFinished=1;
+        var alertMsg="";
+        var ipt = document.getElementById("myForm").getElementsByTagName("input");
+        for(var i = 0; i < ipt.length; i++){
+            if(ipt[i].value==null || ipt[i].value==""){
+                formFinished=0;
+                alertMsg="个人信息填写不完整，请返回检查！";
+                swiper.slideTo(1, 1000, false);
+                break;
+            }
+        }
+        if(formFinished==1){
+            for(var i=1;i<=31;i++){
+                var oneRadioGroup=document.getElementsByName("q"+i);
+//                alert(oneRadioGroup[0].checked);
+                if((!oneRadioGroup[0].checked) && (!oneRadioGroup[1].checked) ){
+                    formFinished=0;
+                    alertMsg="第"+i+"题未选择，请返回检查！";
+                    swiper.slideTo(i+1, 1000, false);
+                    break;
+                }
+            }
+        }
+        if(formFinished==0){
+            alert(alertMsg);
+            $('.hidden-submit-box').show();
+            $('.shown-submit-button').hide();
+            return false;
+        }
+        else{
+            document.getElementById("myForm").submit();
+        }
+    }
+
+
+</script>
+</body>
+</html>
