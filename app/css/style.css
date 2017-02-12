@@ -3444,12 +3444,7 @@ textarea {
 	}
 }
 
-#hz6d_mnkh_content .mnkf_dialog_list li.focus {
-	background-color: rgba(186, 212, 244, 0) !important;
-	border-top: 0 !important;
-	border-bottom: 0 !important;
+#hz6d_mnkh_min, #hz6d_mnkh_talking {
+	display: none !important;
 }
 
-#hz6d_mnkh_content .mnkf_dialog_list li.focus .arrow {
-	display: none;
-}

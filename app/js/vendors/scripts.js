@@ -1,7 +1,6 @@
 $(document).ready(function () {
     "use strict";
 
-
     /*动态在版权信息处显示当前年份 */
     var date=new Date();
     $('#thisYear').text(
@@ -273,6 +272,10 @@ window.onload = init();
         result.map(function(item) {
             unorderList.append(getSampleListText(item));
         });
+        initCubeportfolio();
+    });
+
+    function initCubeportfolio() {
         /*********************************
          init cubeportfolio
          *********************************/
@@ -332,7 +335,21 @@ window.onload = init();
             }
         });
 
-    });
+        /*********************************
+         activate counter for filters
+         *********************************/
+        gridContainer.cubeportfolio('showCounter', filtersContainer.find('.cbp-filter-item-custom'), function() {
+            // read from url and change filter active
+            var match = /#cbpf=(.*?)([#|?&]|$)/gi.exec(location.href),
+                item;
+            if (match !== null) {
+                item = filtersContainer.find('.cbp-filter-item-custom').filter('[data-filter="' + match[1] + '"]');
+                if (item.length) {
+                    filtersCallback.call(null, item);
+                }
+            }
+        });
+    }
 
     /*********************************
      add listener for filters
@@ -375,22 +392,6 @@ window.onload = init();
 
         // filter the items
         gridContainer.cubeportfolio('filter', me.data('filter'), function() {});
-    });
-
-
-    /*********************************
-     activate counter for filters
-     *********************************/
-    gridContainer.cubeportfolio('showCounter', filtersContainer.find('.cbp-filter-item-custom'), function() {
-        // read from url and change filter active
-        var match = /#cbpf=(.*?)([#|?&]|$)/gi.exec(location.href),
-            item;
-        if (match !== null) {
-            item = filtersContainer.find('.cbp-filter-item-custom').filter('[data-filter="' + match[1] + '"]');
-            if (item.length) {
-                filtersCallback.call(null, item);
-            }
-        }
     });
 
 
