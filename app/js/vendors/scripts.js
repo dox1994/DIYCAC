@@ -250,15 +250,17 @@ window.onload = init();
 (function($, window, document, undefined) {
     'use strict';
     var unorderList = $("#sample_unorder_list"),
+        rawData = [],
         gridContainer = $('#grid-container'),
         filtersContainer = $('#filters-container'),
-        wrap, filtersCallback;
+        wrap, filtersCallback,
+        currentPage = 0, firstPage = 0, lastPage = 0, pageSize = 6, totalSize = 0, backupTotalSize = 0, backupLastPage = 0;
 
     /**
      * for current implementation, sampleObj should be the same obj in past_samples.json.
      */
-    function getSampleListText(sampleObj) {
-        return '<li class="cbp-item frame ' + sampleObj.category +
+    function getSampleListText(sampleObj, category) {
+        return '<li class="cbp-item frame ' + sampleObj.category + ' ' + category +
             ' sample_display"><div class="cbp-item-wrapper"><div class="cbp-caption-defaultWrap card">' +
             '<img src="'+sampleObj.image+'"/>'+'<h3 class="card-name">' +
             sampleObj.name + '</h3><p><b>录取学校: </b>' + sampleObj.acceptedSchool + '</p><p><b>申请专业: </b>' + sampleObj.major +
@@ -269,10 +271,18 @@ window.onload = init();
      get all samples from backend
      *********************************/
     $.getJSON( "/get_past_examples", function(result) {
-        result.map(function(item) {
-            unorderList.append(getSampleListText(item));
-        });
+        for(var i = 0; i < result.length; i++) {
+            rawData.push(result[i]);
+            unorderList.append(getSampleListText(result[i], Math.floor(i / pageSize)));
+        }
+
+        totalSize = rawData.length;
+        lastPage = Math.ceil(totalSize / pageSize - 1);
+        backupTotalSize = totalSize;
+        backupLastPage = lastPage;
         initCubeportfolio();
+
+        filterPage(0);
     });
 
     function initCubeportfolio() {
@@ -313,7 +323,6 @@ window.onload = init();
             singlePageCallback: function(url, element) {
                 // to update singlePage content use the following method: this.updateSinglePage(yourContent)
 
-
                 $('a[data-rel]').each(function () {
                     $(this).attr('rel', $(this).data('rel'));
                 });
@@ -351,6 +360,40 @@ window.onload = init();
         });
     }
 
+    /*********************************
+     next page click function
+     *********************************/
+    $("#next_page_button").on( "click", function(){
+        if (currentPage >= lastPage) {
+            //do the last items.
+            return;
+        }
+
+        filterPage(++currentPage);
+
+    });
+
+    /*********************************
+     next page click function
+     *********************************/
+    $("#prev_page_button").on( "click", function() {
+        if (currentPage <= firstPage) {
+            //do the last items.
+            return;
+        }
+
+        filterPage(--currentPage);
+    });
+
+    function filterPage(page) {
+        var me = $(this);
+
+        if (!$.data(gridContainer[0], 'cubeportfolio').isAnimating) {
+            filtersCallback.call(null, me);
+        }
+        gridContainer.cubeportfolio('filter', '.' + page, function() {});
+        $("#page_display").text("").append("第 " + (currentPage + 1) + " 页");
+    }
     /*********************************
      add listener for filters
      *********************************/
@@ -390,10 +433,29 @@ window.onload = init();
             filtersCallback.call(null, me);
         }
 
-        // filter the items
-        gridContainer.cubeportfolio('filter', me.data('filter'), function() {});
+        // filter the items, me.data('filter')
+        updateFolio(me.data('filter'));
     });
 
+    function updateFolio(flagKey) {
+        gridContainer.cubeportfolio('destroy');
+
+        var localSize = 0;
+        currentPage = 0;
+        unorderList.text("");
+        totalSize = backupTotalSize;
+        for(var i = 0; i < totalSize; i++) {
+            if (flagKey === "*" || rawData[i].category === flagKey.substring(1, flagKey.length)) {
+                unorderList.append(getSampleListText(rawData[i], Math.floor(localSize / pageSize)));
+                localSize++;
+            }
+        }
+        totalSize = localSize;
+        lastPage = Math.ceil(totalSize / pageSize - 1);
+
+        initCubeportfolio();
+        filterPage(0);
+    }
 
     /*********************************
      add listener for load more
