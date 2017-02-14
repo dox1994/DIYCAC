@@ -35,7 +35,7 @@ app.post('/questionnaire', urlencodedParser, function(req, res) {
    var htmlStr=myEmailHelper.getEmailHtml(req.body,mbti_result);
     transporter.sendMail({
         from    : 'MBTI<' + user + '>'
-        , to      : 'xindongxing@outlook.com,1609483266@qq.com'
+        , to      : 'meng.zhang@diycac.org'
         , subject : '【MBTI测试结果】'+req.body.name+' - '+req.body.school
         , html    : htmlStr
     }, function(err, res) {

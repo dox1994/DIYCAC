@@ -546,14 +546,13 @@ body,h1,h2,h3,h4,h5,h6{
 #iconDivMain1 div:nth-child(2),#mnkf_ad,#ad_html,#hz6d_iframe_logo {
     display: none !important;
 }
-
-/*!*对话界面左浮动*!
-.mnkf_content_head{
-    float:left;
+/*在移动设备上隐藏53kf的所有窗口*/
+@media only screen and (max-width: 640px){
+    #iconDiv1,#kfiframe,#kfivtwin{
+        display:none !important;
+    }
 }
-.mnkf_content_body{
-    float:left;
-}*/
+
 
 /* 职业测试问卷调查页面样式 */
 .questionnaire-top{
@@ -588,6 +587,15 @@ body,h1,h2,h3,h4,h5,h6{
     padding:20px;
     overflow:auto;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#zodiacShow{
+    animation:blingbling 1s  ease-in 20 ;
+    color: #183653;
+}
+@keyframes blingbling {
+    0%{ text-shadow: 0 0 4px #183653}
+    50%{ text-shadow: 0 0 20px #183653}
+    100%{ text-shadow: 0 0 4px #183653}
 }
 .questionnaire-button-long{
     width:100%;
@@ -624,4 +632,35 @@ body,h1,h2,h3,h4,h5,h6{
     display:none;
     margin-bottom:10px;
 }
-
+/*MBTI问卷欢迎页面*/
+.questionnaire-welcome-body{
+    text-align:center;
+    position:fixed;
+    top:100px;
+    width:100%;
+}
+.questionnaire-welcome-body .image{
+    height:100px;
+    padding-left:10px;
+}
+.questionnaire-welcome-body .welcome{
+    font-size:30px;
+    color:#FFFFFF;
+    margin-top:60px;
+    margin-bottom:80px;
+}
+.questionnaire-welcome-body .button{
+    margin:0 auto;
+    display:block;
+    border:1px solid #FFFFFF;
+    border-radius:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    width:50%;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.questionnaire-welcome-body .button:hover{
+    background:#FFFFFF;
+    color:#183653;
+}
