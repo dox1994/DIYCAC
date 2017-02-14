@@ -6,7 +6,7 @@ var fs = require("fs");
 var bodyParser=require('body-parser');
 var nodemailer=require('nodemailer');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-var myEmailHelper=require('./app/js/prepare_questionnaire_result.js');
+var myEmailHelper=require('./prepare_questionnaire_result.js');
 
 var app = express();
 app.use(express.static(__dirname + '/dist' ));
@@ -34,8 +34,8 @@ app.post('/questionnaire', urlencodedParser, function(req, res) {
     if (!req.body) return res.sendStatus(400);
    var htmlStr=myEmailHelper.getEmailHtml(req.body,mbti_result);
     transporter.sendMail({
-        from    : 'auto-mailer<' + user + '>'
-        , to      : 'xindongxing@outlook.com'
+        from    : 'MBTI<' + user + '>'
+        , to      : 'xindongxing@outlook.com,1609483266@qq.com'
         , subject : '【MBTI测试结果】'+req.body.name+' - '+req.body.school
         , html    : htmlStr
     }, function(err, res) {

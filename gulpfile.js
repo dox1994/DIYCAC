@@ -9,8 +9,6 @@ gulp.task('copy', function(){
         .pipe(gulp.dest('dist/css'));
     gulp.src('app/js/vendors/*')
         .pipe(gulp.dest('dist/js'));
-    gulp.src('app/js/*')
-        .pipe(gulp.dest('dist/js'));
     gulp.src('app/images/*')
         .pipe(gulp.dest('dist/images'));
     gulp.src('app/images/svg/**')
