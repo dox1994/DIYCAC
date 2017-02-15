@@ -18,8 +18,8 @@ app.get('/get_past_examples', function(req, res)
 });
 
 
-var user = 'dox1994@qq.com'
-    , pass = 'ekoajtyvujllgbdh';
+var user = '750789874@qq.com'
+    , pass = 'vgyvqfrhyhvhbfcc';
 var transporter = nodemailer.createTransport({
     service: 'qq',
     port: 465,
