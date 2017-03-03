@@ -548,7 +548,7 @@ body,h1,h2,h3,h4,h5,h6{
 }
 /*在移动设备上隐藏53kf的所有窗口*/
 @media only screen and (max-width: 640px){
-    #iconDiv1,#kfiframe,#kfivtwin{
+    #iconDiv1,#kfiframe,#kfivtwin,#div_company_mini{
         display:none !important;
     }
 }
