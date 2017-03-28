@@ -441,6 +441,10 @@ body,h1,h2,h3,h4,h5,h6{
     min-height: 302px;
     overflow: hidden;
 }
+.effect-3 p{
+    font-size:11px !important;
+    line-height: 18px !important;
+}
 .effect-3 h3{
     padding-top: 7px;
     line-height: 33px;
