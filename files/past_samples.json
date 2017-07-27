@@ -709,5 +709,482 @@
     "category": "doctor",
     "rank": 78,
     "image":"images/people/people_6.png"
+  },
+  {
+    "name": "徐同学",
+    "acceptedSchool": "哥伦比亚大学，LSE，杜克大学",
+    "major": "金数/经济",
+    "background": "学校 211, GPA 3.9, TOEFL 108, GRE 329",
+    "category": "business",
+    "rank": 79,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "康奈尔大学，华盛顿圣路易斯，哥伦比亚大学",
+    "major": "金融/经济",
+    "background": "学校 211, GPA 3.6, TOEFL 105, GRE 332",
+    "category": "business",
+    "rank": 80,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "拓同学",
+    "acceptedSchool": "卡内基梅隆大学，德州奥斯丁",
+    "major": "信管",
+    "background": "学校 211, GPA 3.6, TOEFL 112, GRE 326",
+    "category": "business",
+    "rank": 81,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "唐同学",
+    "acceptedSchool": "加州伯克利，密西根安娜堡",
+    "major": "工程管理",
+    "background": "学校 985, GPA 3.63, TOEFL 103, GRE 325",
+    "category": "business",
+    "rank": 82,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "爱丁堡，杜伦，兰卡斯特",
+    "major": "金融",
+    "background": "学校 211, GPA 89.77, IELTS 7, GMAT 720",
+    "category": "business",
+    "rank": 83,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "胡同学",
+    "acceptedSchool": "UIUC，加州欧文",
+    "major": "会计",
+    "background": "学校 211, GPA 3.7, TOEFL 101, GMAT 720",
+    "category": "business",
+    "rank": 84,
+    "image":"images/people/people_6.png"
+  },
+  {
+    "name": "陈同学",
+    "acceptedSchool": "维克森林大学，华盛顿圣路易斯",
+    "major": "会计",
+    "background": "学校 非211, GPA 3.6, IELTS 7.5, GMAT 720",
+    "category": "business",
+    "rank": 85,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "乔同学",
+    "acceptedSchool": "UIUC，凯斯西储大学",
+    "major": "会计",
+    "background": "学校 985, GPA 3.7, TOEFL 105, GMAT 700",
+    "category": "business",
+    "rank": 86,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "孟同学",
+    "acceptedSchool": "南加州大学，纽约大学",
+    "major": "会计",
+    "background": "学校 非211, GPA 3.8, TOEFL 102, GMAT 710",
+    "category": "business",
+    "rank": 87,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "刘同学",
+    "acceptedSchool": "香港科技大学",
+    "major": "金融数学",
+    "background": "学校 211, GPA 3.81, LEITS 7",
+    "category": "business",
+    "rank": 88,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "南同学",
+    "acceptedSchool": "华威，巴斯，兰卡斯特",
+    "major": "物流",
+    "background": "学校 211， GPA 82.8",
+    "category": "business",
+    "rank": 89,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "黄同学",
+    "acceptedSchool": "哥伦比亚大学",
+    "major": "计算机",
+    "background": "学校 211, GPA 3.4, IELTS 7",
+    "category": "science",
+    "rank": 90,
+    "image":"images/people/people_6.png"
+  },
+  {
+    "name": "吴同学",
+    "acceptedSchool": "卡内基梅隆大学，杜克大学",
+    "major": "计算机",
+    "background": "学校 211, GPA 89.7, TOEFL 106, GRE 327",
+    "category": "science",
+    "rank": 91,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "弗吉尼亚大学, 纽约大学, 波士顿大学",
+    "major": "商科",
+    "background": "天津外国语大学附属外国语学校, GPA 98, TOEFL 112, ACT 35, AP 4门",
+    "category": "undergraduate",
+    "rank": 92,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "王同学",
+    "acceptedSchool": "加州大学伯克利分校, 加州大学洛杉矶分校, 加州大学圣地亚哥分校, 伊利诺伊大学香槟分校",
+    "major": "经济",
+    "background": "101中学, GPA 97, TOEFL 110, ACT 34, AP 4门",
+    "category": "undergraduate",
+    "rank": 93,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "刘同学",
+    "acceptedSchool": "弗吉尼亚大学, 加州大学圣地亚哥分校, 加州大学戴维斯分校",
+    "major": "生物",
+    "background": "北京一七一中学, GPA 97, TOEFL 108, ACT 31, AP 6门",
+    "category": "undergraduate",
+    "rank": 94,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "王同学",
+    "acceptedSchool": "加州大学圣地亚哥分校, 威斯康星大学麦迪逊分校, 华盛顿大学",
+    "major": "生物",
+    "background": "耀华中学, GPA 97, TOEFL 104, ACT 31, AP 5门",
+    "category": "undergraduate",
+    "rank": 95,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "魏同学",
+    "acceptedSchool": "莱斯大学",
+    "major": "化学",
+    "background": "首师大附中, GPA 98, TOEFL 112, ACT 35, AP 4门",
+    "category": "undergraduate",
+    "rank": 96,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "傅同学",
+    "acceptedSchool": "加州大学洛杉矶分校, 波士顿学院, 威斯康星大学麦迪逊分校, 宾州州立大学帕克分校",
+    "major": "数学",
+    "background": "南开中学, GPA 98, TOEFL 114, SAT 2180, AP 4门",
+    "category": "undergraduate",
+    "rank": 97,
+    "image":"images/people/people_6.png"
+  },
+    {
+    "name": "张同学",
+    "acceptedSchool": "伦斯勒理工学院, 加州大学圣塔巴巴拉分校, 加州大学圣地亚哥分校, 威斯康星大学麦迪逊分校",
+    "major": "工程",
+    "background": "南开中学, GPA 97, TOEFL 104, SAT 2080, AP 4门",
+    "category": "undergraduate",
+    "rank": 98,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "李同学",
+    "acceptedSchool": "北卡罗来纳大学教堂山分校, 伊利诺伊大学香槟分校, 德州大学奥斯汀分校",
+    "major": "会计",
+    "background": "北京五中, GPA 97, TOEFL 112, ACT 34, AP 6门",
+    "category": "undergraduate",
+    "rank": 99,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "李同学",
+    "acceptedSchool": "北卡罗来纳大学教堂山分校, 维斯康星大学麦迪逊分校, 加州大学戴维斯分校, 华盛顿大学",
+    "major": "化学",
+    "background": "耀华中学, GPA 98, TOEFL 104, ACT 33, AP 5门",
+    "category": "undergraduate",
+    "rank": 100,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "加州大学圣塔巴巴拉分校, 华盛顿大学, 罗格斯大学新伯朗士威校区",
+    "major": "环境工程",
+    "background": "北京二中, GPA 98, TOEFL 104, ACT 32, AP 3门",
+    "category": "undergraduate",
+    "rank": 101,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "方同学",
+    "acceptedSchool": "维斯康星大学麦迪逊分校, 加州大学圣地亚哥分校, 华盛顿大学",
+    "major": "材料工程",
+    "background": "天津四中, GPA 98, TOEFL 106, ACT 33, AP 4门",
+    "category": "undergraduate",
+    "rank": 102,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "林同学",
+    "acceptedSchool": "波士顿大学, 俄亥俄州立大学, 宾州州立大学帕克分校, 雪城大学",
+    "major": "经济",
+    "background": "天津四十二中, GPA 98, TOEFL 100, ACT 29, AP 4门",
+    "category": "undergraduate",
+    "rank": 103,
+    "image":"images/people/people_6.png"
+  },
+    {
+    "name": "赵同学",
+    "acceptedSchool": "罗切斯特大学, 加州大学圣地亚哥分校, 加州大学戴维斯分校",
+    "major": "生物",
+    "background": "耀华中学, GPA 97, TOEFL 102, ACT 32, AP 4门",
+    "category": "undergraduate",
+    "rank": 104,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "东北大学, 加州大学欧文分校, 加州大学戴维斯分校, 罗格斯大学新伯朗士校区",
+    "major": "经济",
+    "background": "北京八中, GPA 93, TOEFL 96, ACT 28",
+    "category": "undergraduate",
+    "rank": 105,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "王同学",
+    "acceptedSchool": "莱斯大学, 佐治亚理工学院, 伊利诺伊大学香槟分校",
+    "major": "工程",
+    "background": "北师大附中, GPA 97, TOEFL 114, SAT 2220, AP 4门",
+    "category": "undergraduate",
+    "rank": 106,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "闫同学",
+    "acceptedSchool": "南加州大学, 北卡罗来纳大学教堂山分校, 维斯康星大学麦迪逊分校",
+    "major": "undecided",
+    "background": "天津一中, GPA 97, TOEFL 108, SAT 2180",
+    "category": "undergraduate",
+    "rank": 107,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "武同学",
+    "acceptedSchool": "佩珀代因大学, 加州大学欧文分校, 加州大学戴维斯分校, 迈阿密大学",
+    "major": "数学",
+    "background": "天津外国语大学附属外国语学校, GPA 98, TOEFL 96, ACT 27, AP 5门",
+    "category": "undergraduate",
+    "rank": 108,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "万同学",
+    "acceptedSchool": "加州大学欧文分校, 加州大学戴维斯分校, 加州大学圣塔巴巴拉分校, 俄亥俄州立大学",
+    "major": "数学",
+    "background": "十一中学, GPA 92, TOEFL 92, ACT 27",
+    "category": "undergraduate",
+    "rank": 109,
+    "image":"images/people/people_6.png"
+  },
+    {
+    "name": "张同学",
+    "acceptedSchool": "加州大学洛杉矶分校, 北卡罗来纳大学教堂山分校, 波士顿学院, 华盛顿大学",
+    "major": "数学",
+    "background": "人大附中, GPA 98, TOEFL 112, ACT 33, AP 2门",
+    "category": "undergraduate",
+    "rank": 110,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "石同学",
+    "acceptedSchool": "罗切斯特大学, 伦斯勒理工学院, 伊利诺伊大学香槟分校, 宾州州立大学",
+    "major": "数学",
+    "background": "汇文中学, GPA 96, TOEFL 108, ACT 31, AP 3门",
+    "category": "undergraduate",
+    "rank": 111,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "鲁同学",
+    "acceptedSchool": "卡内基梅隆大学, 伊利诺伊大学香槟分校, 华盛顿大学",
+    "major": "工程",
+    "background": "101中学, GPA 98, TOEFL 116, ACT 34, AP 5门",
+    "category": "undergraduate",
+    "rank": 112,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "魏同学",
+    "acceptedSchool": "康内尔大学, 加州大学洛杉矶分校",
+    "major": "工程",
+    "background": "汇文中学, GPA 97, TOEFL 114, ACT 34, AP 4门",
+    "category": "undergraduate",
+    "rank": 113,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "李同学",
+    "acceptedSchool": "杜克大学",
+    "major": "数学",
+    "background": "北京四中, GPA 98, TOEFL 118, ACT 35, AP 5门",
+    "category": "undergraduate",
+    "rank": 114,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "赵同学",
+    "acceptedSchool": "加州大学洛杉矶分校, 北卡罗来纳大学教堂山分校",
+    "major": "环境",
+    "background": "天津外国语大学附属外国语学校, GPA 98, TOEFL 112, SAT 2180, AP 5门",
+    "category": "undergraduate",
+    "rank": 115,
+    "image":"images/people/people_6.png"
+  },
+    {
+    "name": "刘同学",
+    "acceptedSchool": "康奈尔大学, 加州大学伯克利分校, 加州大学洛杉矶分校, 加州大学欧文分校",
+    "major": "数学",
+    "background": "101中学, GPA 98, TOEFL 112, ACT 34, AP 5门",
+    "category": "undergraduate",
+    "rank": 116,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "约翰霍普金斯大学, 莱斯大学, 加州大学洛杉矶分校",
+    "major": "生物",
+    "background": "十一中学, GPA 98, TOEFL 114, ACT 35, AP 6门",
+    "category": "undergraduate",
+    "rank": 117,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "东北大学, 加州大学圣地亚哥分校, 加州大学欧文分校, 宾州州立大学帕克分校 ",
+    "major": "数学",
+    "background": "天津中学, GPA 95, TOEFL 100, ACT 28",
+    "category": "undergraduate",
+    "rank": 118,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "单同学",
+    "acceptedSchool": "康内尔大学",
+    "major": "工程",
+    "background": "人大附中, GPA 98, TOEFL 114, ACT 35, AP 5门",
+    "category": "undergraduate",
+    "rank": 119,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "王同学",
+    "acceptedSchool": "纽约大学, 加州大学伯克利分校, 罗切斯特大学, 东北大学",
+    "major": "商科",
+    "background": "耀华中学, GPA 98, TOEFL 114, ACT 34, AP 4门",
+    "category": "undergraduate",
+    "rank": 120,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "冯同学",
+    "acceptedSchool": "北卡罗来纳大学教堂山分校, 佩珀代因大学, 加州大学欧文分校, 宾州州立大学帕克分校",
+    "major": "商科",
+    "background": "天津中学, GPA 96, TOEFL 109, ACT 31, AP 2门",
+    "category": "undergraduate",
+    "rank": 121,
+    "image":"images/people/people_6.png"
+  },
+    {
+    "name": "粱同学",
+    "acceptedSchool": "伦敦大学学院, 华威大学, 约克大学",
+    "major": "数学",
+    "background": "天津外国语大学附属外国语学校, GPA 98, IELTS 7.0",
+    "category": "undergraduate",
+    "rank": 122,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "刘同学",
+    "acceptedSchool": "华威大学, 兰卡斯特大学, 曼彻斯特大学",
+    "major": "经济",
+    "background": "天津外国语大学附属外国语学校, GPA 96, IELTS 7.0",
+    "category": "undergraduate",
+    "rank": 123,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "何同学",
+    "acceptedSchool": "圣安德鲁大学, 巴斯大学",
+    "major": "商科",
+    "background": "十一中学, GPA 97, IELTS 7.0",
+    "category": "undergraduate",
+    "rank": 124,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "高同学",
+    "acceptedSchool": "布里斯托大学, 伦敦大学国王学院",
+    "major": "经济",
+    "background": "耀华中学, GPA 98, IELTS 6.5",
+    "category": "undergraduate",
+    "rank": 125,
+    "image":"images/people/people_4.png"
+  },
+  {
+    "name": "王同学",
+    "acceptedSchool": "杜伦大学, 谢菲尔德大学, 拉夫堡大学",
+    "major": "经济",
+    "background": "人大附中, GPA 96, IELTS 7.0",
+    "category": "undergraduate",
+    "rank": 126,
+    "image":"images/people/people_5.png"
+  },
+  {
+    "name": "宋同学",
+    "acceptedSchool": "伦敦大学学院, 华威大学, 约克大学",
+    "major": "化学",
+    "background": "北京四中, GPA 97, IELTS 7.0",
+    "category": "undergraduate",
+    "rank": 127,
+    "image":"images/people/people_6.png"
+  },
+    {
+    "name": "李同学",
+    "acceptedSchool": "兰卡斯特大学, 巴斯大学",
+    "major": "会计与金融",
+    "background": "北师大附中, GPA 98, IELTS 7.5",
+    "category": "undergraduate",
+    "rank": 128,
+    "image":"images/people/people_1.png"
+  },
+  {
+    "name": "王同学",
+    "acceptedSchool": "利兹大学, 伦敦大学玛丽皇后学院",
+    "major": "化学",
+    "background": "汇文中学, GPA 96, IELTS 6.0",
+    "category": "undergraduate",
+    "rank": 129,
+    "image":"images/people/people_2.png"
+  },
+  {
+    "name": "张同学",
+    "acceptedSchool": "华威大学, 约克大学, 爱丁堡大学",
+    "major": "经济",
+    "background": "北师大附中, GPA 96, IELTS 6.5",
+    "category": "undergraduate",
+    "rank": 130,
+    "image":"images/people/people_3.png"
+  },
+  {
+    "name": "刘同学",
+    "acceptedSchool": "伦敦大学国王学院, 曼彻斯特大学",
+    "major": "会计",
+    "background": "天津外国语大学附属外国语学校, GPA 97, IELTS 7.0",
+    "category": "undergraduate",
+    "rank": 131,
+    "image":"images/people/people_4.png"
   }
 ]
