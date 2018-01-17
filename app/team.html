@@ -115,7 +115,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12" style="color:#3c3c3d;">
                         <h2 style="color:#3c3c3d;" >写在前面</h2>
-                        <p><br/>十年留学咨询行业的沉淀，让我们更加懂得了珍惜，珍惜每一位同学和家长给予我们的期望与信任，珍惜每一份Offer收获的喜悦与艰辛。同时，珍惜赋予了我们更大的责任，10年来中美加国际的精益求精，逐渐磨炼出了一支卓越的精英顾问团队，他们毕业于海内外名校，他们留学行业经验丰富，他们深知Dream School录取对于每个同学和家庭的意义，这使得他们不断学习，不断的挖掘自己最大的潜力，成为了助力学生冲击名校的利器！2017年，我们坚信，在“珍惜”与“责任”的陪伴下，为同学、为家长、提供更加专业的服务，实现每个人的名校梦想！
+                        <p><br/>十年留学咨询行业的沉淀，让我们更加懂得了珍惜，珍惜每一位同学和家长给予我们的期望与信任，珍惜每一份Offer收获的喜悦与艰辛。同时，珍惜赋予了我们更大的责任，10年来中美加国际的精益求精，逐渐磨炼出了一支卓越的精英顾问团队，他们毕业于海内外名校，他们留学行业经验丰富，他们深知Dream School录取对于每个同学和家庭的意义，这使得他们不断学习，不断的挖掘自己最大的潜力，成为了助力学生冲击名校的利器！<span id="thisYearInline"></span>年，我们坚信，在“珍惜”与“责任”的陪伴下，为同学、为家长、提供更加专业的服务，实现每个人的名校梦想！
                         </p>
                         <div style="float:right;margin-right:10px;vertical-align:center;">
                            —— &nbsp;<img style="height:40px;" src="images/frank_signature.png"/><br/>
@@ -555,6 +555,11 @@
         $(this).hide();
         $("#moreSlideDown").show();
     });
+
+    var date=new Date();
+    $('#thisYearInline').text(
+        date.getFullYear()
+    );
 
 </script>
 </body></html>
